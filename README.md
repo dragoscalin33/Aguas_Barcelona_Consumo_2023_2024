@@ -1,8 +1,4 @@
-# ============================================
-# INFORME EJECUTIVO FINAL
-# ============================================
 
-informe_md = """
 # INFORME EJECUTIVO: Analisis de Consumo de Agua en Barcelona (2023-2024)
 
 ---
