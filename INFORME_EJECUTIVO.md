@@ -101,6 +101,7 @@ El análisis se realizó utilizando Python y las librerías especializadas Panda
 
 ## Anexos
 
-| **Consumo Total** | ![](visualizaciones/mapa_consumo_total_screenshot.png) | [Ver mapa interactivo](https://dragoscalin33.github.io/Aguas_Barcelona_Consumo_2023_2024/mapas/mapa_consumo_total.html) |
-| **% Industrial** | ![](visualizaciones/mapa_industrial_screenshot.png) | [Ver mapa interactivo](https://dragoscalin33.github.io/Aguas_Barcelona_Consumo_2023_2024/mapas/mapa_industrial.html) |
-| **Per Cápita** | ![](visualizaciones/mapa_per_capita_screenshot.png) | [Ver mapa interactivo](https://dragoscalin33.github.io/Aguas_Barcelona_Consumo_2023_2024/mapas/mapa_per_capita.html) |
+**Mapas interactivos:**
+- [Consumo Total por municipio](https://dragoscalin33.github.io/Aguas_Barcelona_Consumo_2023_2024/mapas/mapa_consumo_total.html)
+- [Porcentaje de consumo industrial](https://dragoscalin33.github.io/Aguas_Barcelona_Consumo_2023_2024/mapas/mapa_industrial.html)
+- [Consumo per cápita](https://dragoscalin33.github.io/Aguas_Barcelona_Consumo_2023_2024/mapas/mapa_per_capita.html)
