@@ -1,4 +1,4 @@
-# INFORME EJECUTIVO COMPLETO: Análisis del Consumo de Agua en Barcelona (2023-2024)
+# INFORME EJECUTIVO: Análisis del Consumo de Agua en Barcelona (2023-2024)
 
 | **Autor** | Dragos Calin |
 | :--- | :--- |
