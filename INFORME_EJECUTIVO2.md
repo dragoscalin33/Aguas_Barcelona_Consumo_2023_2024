@@ -7,7 +7,7 @@
 | **Fuente de Datos** | Registros de Consumo (2023) y Alertas de Fugas (2024) |
 | **Volumen Analizado** | 963,419 registros de consumo y 121,834 alertas de fugas |
 
-**[Ver análisis detallado en Jupyter Notebook](notebooks/analisis_consumo_agua.ipynb)**
+**[Ver análisis detallado en Jupyter Notebook](notebooks/aguas_barcelona.ipynb)**
 
 ---
 
@@ -138,7 +138,7 @@ La implementación de las recomendaciones priorizadas permitirá no solo reducir
 * [Heatmap de Composición por Distrito](visualizaciones/fase2_1_heatmap_composicion.png)
 
 ### B. Documentación Técnica
-* **Notebook Completo:** [Análisis en Jupyter](notebooks/analisis_consumo_agua.ipynb)
+* **Notebook Completo:** [Análisis en Jupyter](notebooks/aguas_barcelona.ipynb)
 * **Código Fuente:** Disponible en el repositorio del proyecto
 
 ### C. Contacto
