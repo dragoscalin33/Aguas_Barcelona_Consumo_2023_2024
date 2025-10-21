@@ -57,7 +57,7 @@ Explora los mapas interactivos:
 
 | Mapa | Vista Previa | Enlace |
 |------|--------------|--------|
-| **Consumo Total** | ![](visualizaciones/mapa_consumo_total_screenshot.png) | [Ver mapa interactivo](mapas/mapa_consumo_total.html) |
+| **Consumo Total** | ![](visualizaciones/mapa_consumo_total_screenshot.png) ||[Ver mapa interactivo (https://dragoscalin33.github.io/Aguas_Barcelona_Consumo_2023_2024/mapas/mapa_consumo_total.html)
 | **% Industrial** | ![](visualizaciones/mapa_industrial_screenshot.png) | [Ver mapa interactivo](mapas/mapa_industrial.html) |
 | **Per Cápita** | ![](visualizaciones/mapa_per_capita_screenshot.png) | [Ver mapa interactivo](mapas/mapa_per_capita.html) |
 
