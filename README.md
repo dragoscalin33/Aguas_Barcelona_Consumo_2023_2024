@@ -133,9 +133,9 @@ Explora los mapas interactivos:
 
 ## Contacto
 
-**Autor**: [Tu Nombre]  
-**LinkedIn**: [tu-linkedin]  
-**Email**: tu@email.com
+**Autor**: Dragos Calin 
+**LinkedIn**: https://www.linkedin.com/in/dragos-calin33/ 
+**Email**: dragoscalin@yahoo.com
 
 ---
 
