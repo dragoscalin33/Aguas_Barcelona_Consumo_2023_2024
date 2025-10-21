@@ -133,8 +133,10 @@ Explora los mapas interactivos:
 
 ## Contacto
 
-**Autor**: Dragos Calin 
+**Autor**: Dragos Calin
+
 **LinkedIn**: https://www.linkedin.com/in/dragos-calin33/ 
+
 **Email**: dragoscalin@yahoo.com
 
 ---
