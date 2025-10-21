@@ -111,7 +111,6 @@ Explora los mapas interactivos:
 ├── 📁 data/ (datasets originales)
 ├── 📁 mapas/ (mapas HTML interactivos)
 ├── 📁 visualizaciones/ (gráficos PNG)
-└── 📁 resultados/ (tablas resumen)
 ```
 
 ---
