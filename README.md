@@ -10,6 +10,7 @@ Análisis exhaustivo de 963,419 registros de consumo de agua y 121,834 alertas d
 - **Top 3 distritos** concentran el **50.3%** del consumo total
 - **Sants-Montjuïc** representa el **25.6%** del consumo industrial
 - **24%** de fugas son reiteradas (no reparadas a tiempo)
+- **Machine Learning**: Identificación de **4 perfiles de consumo** mediante Clustering (K-Means).
 
 ---
 
@@ -37,6 +38,23 @@ Análisis exhaustivo de 963,419 registros de consumo de agua y 121,834 alertas d
 | Comercial | 13.5% | 135 L/día/contador |
 
 **Insight:** Un contador industrial consume **277× más** que uno doméstico.
+
+---
+
+### 3. Segmentación Avanzada (Data Science)
+
+Utilizando algoritmos de Machine Learning (**K-Means**) y análisis de correlación, hemos profundizado en el comportamiento poblacional:
+
+![Perfiles de Consumo](visualizaciones/fase6_radar_chart.png)
+
+**A. Perfiles Identificados (Clustering):**
+- **Cluster 3 (Zona Rica - Alto Consumo):** Renta media más alta (64k€) y mayor consumo per cápita (212 L/hab).
+- **Cluster 0 (Clase Media):** Consumo moderado y demografía equilibrada.
+- **Cluster 1 (Zona Envejecida):** Menor consumo per cápita asociado a hogares más pequeños.
+
+**B. Mito de la Edad (Correlación):**
+- **Hallazgo:** El análisis arroja un **R = 0.02** entre Edad Media y Consumo.
+- **Conclusión:** La edad por sí sola **NO** determina el consumo; el factor determinante es la Renta y el Tipo de Vivienda (piscinas/jardines).
 
 ---
 
@@ -79,11 +97,16 @@ Explora los mapas interactivos:
 - **Acción**: Inspección de 73,253 contadores industriales
 - **Ahorro Potencial**: 119M L/día
 
-### PRIORIDAD 2: Protocolo Fugas Reiteradas
+### PRIORIDAD 2: Estrategia Segmentada por Perfiles
+- **Acción**: Campañas de concienciación diferenciadas según el Cluster detectado.
+    - *Cluster 3 (Alto Standing):* Foco en eficiencia de piscinas y riego inteligente.
+    - *Cluster 0 (Familias):* Foco en electrodomésticos eficientes y ahorro doméstico.
+
+### PRIORIDAD 3: Protocolo Fugas Reiteradas
 - **Acción**: Reparación <24h para fugas >100 L/día
 - **Objetivo**: Reducir reiteración de 24% a <10%
 
-### PRIORIDAD 3: Auditoría en Sants-Montjuïc (6-12 meses)
+### PRIORIDAD 4: Auditoría en Sants-Montjuïc (6-12 meses)
 - **Acción**: Inspección de 211,859 contadores
 - **Ahorro Potencial**: 305M L/día
 
@@ -92,7 +115,11 @@ Explora los mapas interactivos:
 ## Metodología
 
 - **Datasets**: 963,419 registros consumo (2023) + 121,834 alertas fugas (2024)
-- **Herramientas**: Python, Pandas, Matplotlib, Seaborn, Folium, GeoPandas
+- **Stack Tecnológico**: 
+  - **Procesamiento:** Python, Pandas, NumPy.
+  - **Machine Learning:** Scikit-learn (K-Means, PCA, Correlación de Pearson).
+  - **Visualización:** Matplotlib, Seaborn, Folium.
+- **Nota Técnica:** Se utilizó generación de datos demográficos sintéticos basados en estadística oficial de BCN para la validación del modelo de clustering (ante restricciones de privacidad en micro-datos censales).
 - **Métricas**:
   - **RCI**: Riesgo de Concentración Industrial
   - **IIC**: Intensidad de Consumo Industrial
