@@ -51,12 +51,12 @@ Antes de segmentar, validamos el número óptimo de clusters mediante el **Méto
 ![Validación Matemática](visualizaciones/fase6_validacion_k.png)
 
 **B. Perfiles Identificados:**
-
 ![Perfiles de Consumo](visualizaciones/fase6_radar_chart.png)
 
 - **Cluster 3 (Zona Rica - Alto Consumo):** Renta media más alta (64k€) y mayor consumo per cápita (212 L/hab).
 - **Cluster 0 (Clase Media):** Consumo moderado y demografía equilibrada.
 - **Cluster 1 (Zona Envejecida):** Menor consumo per cápita asociado a hogares más pequeños.
+- **Cluster 2 (Zona Joven/Estudiantil):** Mayor porcentaje de población entre 15-29 años con consumo medio-bajo.
 
 **C. Visualización 3D Interactiva:**
 Mapeo tridimensional de los barrios según Renta (X), Consumo (Y) y Edad (Z).
