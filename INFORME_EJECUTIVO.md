@@ -115,7 +115,7 @@ Las siguientes acciones están ordenadas por potencial de ahorro a corto y medio
 | **2** | **Fraude / Anomalías** | **Inspección IA:** Revisión in-situ del 1% de casos detectados por el algoritmo Isolation Forest. | Recuperación de Ingresos |
 | **3** | **Segmentación (ML)** | **Estrategia por Perfiles:** Campañas diferenciadas (Cluster 3: Riego/Piscinas vs Cluster 0: Hogar). | Eficiencia Conductual | 3-9 meses |
 | **4** | **Fugas Operacionales** | **Protocolo de Urgencia:** Reparación en <24h para fugas >100 L/día. | Reducir reiteración al <10% | Continuo |
-| **4** | **Sants-Montjuïc** | **Auditoría General:** Inspección masiva por volumen total. | **305 M L/día** | 6-12 meses |
+| **5** | **Sants-Montjuïc** | **Auditoría General:** Inspección masiva por volumen total. | **305 M L/día** | 6-12 meses |
 
 ---
 
@@ -133,7 +133,7 @@ Las siguientes acciones están ordenadas por potencial de ahorro a corto y medio
 
 ### 4.3. Herramientas y Stack Tecnológico
 * **Procesamiento:** Python, Pandas, NumPy.
-* * **Machine Learning & AI:** Scikit-learn (**K-Means** para clustering, **Isolation Forest** para anomalías).
+* **Machine Learning & AI:** Scikit-learn (**K-Means** para clustering, **Isolation Forest** para anomalías).
 * **Visualización:** Matplotlib, Seaborn, Folium/GeoPandas.
 
 ---
