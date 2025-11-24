@@ -38,7 +38,7 @@ Los distritos de **Sants-Montjuïc, Eixample y Ciutat Vella** son los principale
 
 **Visualización Clave:** [Consumo por Distrito](visualizaciones/fase1c_ranking_distritos.png)
 
-### 2.2. Segmentación Avanzada (Data Science) [NUEVO]
+### 2.2. Segmentación Avanzada (Data Science)
 
 Utilizando algoritmos no supervisados (**K-Means**), hemos segmentado la población en 4 perfiles de comportamiento para personalizar las estrategias de ahorro.
 
@@ -75,11 +75,13 @@ El análisis de riesgo combina el Riesgo de Concentración Industrial (RCI) con 
 
 ### 2.5. Mapas Interactivos de Consumo
 
-Explore la distribución espacial del consumo de agua en Barcelona mediante mapas interactivos:
+Exploración la distribución espacial del consumo de agua en Barcelona mediante mapas interactivos:
 
-* **Consumo Total:** [Ver mapa interactivo](https://dragoscalin33.github.io/Aguas_Barcelona_Consumo_2023_2024/mapas/mapa_consumo_total.html)
-* **% Industrial:** [Ver mapa interactivo](https://dragoscalin33.github.io/Aguas_Barcelona_Consumo_2023_2024/mapas/mapa_industrial.html)
-* **Per Cápita:** [Ver mapa interactivo](https://dragoscalin33.github.io/Aguas_Barcelona_Consumo_2023_2024/mapas/mapa_per_capita.html)
+| Mapa | Descripción | Enlace |
+|------|-------------|--------|
+| **Consumo Total** | Volumen total de agua consumida por distrito | [Ver mapa interactivo](https://dragoscalin33.github.io/Aguas_Barcelona_Consumo_2023_2024/mapas/mapa_consumo_total.html) |
+| **% Industrial** | Porcentaje del consumo destinado al sector industrial | [Ver mapa interactivo](https://dragoscalin33.github.io/Aguas_Barcelona_Consumo_2023_2024/mapas/mapa_industrial.html) |
+| **Per Cápita** | Consumo de agua por habitante y día | [Ver mapa interactivo](https://dragoscalin33.github.io/Aguas_Barcelona_Consumo_2023_2024/mapas/mapa_per_capita.html) |
 
 ### 2.6. Análisis de Fugas y Pérdidas
 
@@ -156,5 +158,5 @@ Para consultas sobre este informe o acceso a los datos completos:
 
 ---
 
-*Este informe fue generado como parte del análisis del consumo de agua en Barcelona. 
-*Todos los datos utilizados provienen de fuentes oficiales y están disponibles en el repositorio del proyecto.
+**Este informe fue generado como parte del análisis del consumo de agua en Barcelona. 
+**Todos los datos utilizados provienen de fuentes oficiales y están disponibles en el repositorio del proyecto.
