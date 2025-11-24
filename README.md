@@ -51,6 +51,7 @@ Antes de segmentar, validamos el número óptimo de clusters mediante el **Méto
 ![Validación Matemática](visualizaciones/fase6_validacion_k.png)
 
 **B. Perfiles Identificados:**
+
 ![Perfiles de Consumo](visualizaciones/fase6_radar_chart.png)
 
 - **Cluster 3 (Zona Rica - Alto Consumo):** Renta media más alta (64k€) y mayor consumo per cápita (212 L/hab).
