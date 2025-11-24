@@ -95,7 +95,7 @@ Se analizaron **121,834 alertas de fugas** registradas en 2024.
 
 ---
 
-### 2.7. Detección de Anomalías con IA (Nuevo)
+### 2.7. Detección de Anomalías con IA
 
 Implementación de **Isolation Forest** para detectar casos atípicos que escapan a las reglas simples:
 * **Hallazgo:** Se ha aislado el **1%** de los contadores con comportamiento anómalo (consumo desproporcionado para su categoría).
