@@ -58,7 +58,7 @@ Utilizando algoritmos de Machine Learning (**K-Means**) y análisis de correlaci
 
 ---
 
-### 3. Análisis de Riesgo (RCI/IIC)
+### 4. Análisis de Riesgo (RCI/IIC)
 
 ![Matriz de Riesgo](visualizaciones/fase3_matriz_riesgo.png)
 
@@ -69,7 +69,7 @@ Utilizando algoritmos de Machine Learning (**K-Means**) y análisis de correlaci
 
 ---
 
-### 4. Mapas Interactivos
+### 5. Mapas Interactivos
 
 Explora los mapas interactivos:
 
@@ -81,7 +81,7 @@ Explora los mapas interactivos:
 
 ---
 
-### 5. Análisis de Fugas
+### 6. Análisis de Fugas
 
 ![Evolución de Fugas](visualizaciones/fase5_evolucion_fugas.png)
 
