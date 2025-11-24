@@ -43,11 +43,14 @@ Los distritos de **Sants-Montjuïc, Eixample y Ciutat Vella** son los principale
 
 Utilizando algoritmos no supervisados (**K-Means**), hemos segmentado la población en 4 perfiles de comportamiento para personalizar las estrategias de ahorro.
 
-* **Cluster 3 (Zona Rica - Alto Consumo):** Secciones censales con Renta media alta (~64k€) y el mayor consumo per cápita (**212 L/hab/día**). *Factor clave: Piscinas y riego.*
-* **Cluster 0 (Clase Media):** Consumo moderado y demografía equilibrada.
-* **Cluster 1 (Zona Envejecida):** Menor consumo per cápita asociado a hogares unipersonales.
-* **Cluster 2 (Zona Joven/Estudiantil):** Mayor porcentaje de población entre 15-29 años con consumo medio-bajo.
-* **Mito de la Edad:** El análisis estadístico confirma que la edad **no correlaciona** con el consumo (R=0.02); el factor determinante es el nivel socioeconómico.
+**Mito de la Edad:** El análisis estadístico confirma que la edad **no correlaciona** con el consumo (R=0.02); el factor determinante es el nivel socioeconómico.
+
+| Cluster | Perfil | Características Clave |
+| :---: | :--- | :--- |
+| **3** | **Zona Rica - Alto Consumo** | Renta más alta (~64k€) y consumo per cápita extremo (**212 L/hab/día**). Principalmente piscinas y riego. |
+| **0** | **Clase Media** | Consumo moderado y demografía equilibrada. El perfil estándar de la ciudad. |
+| **1** | **Zona Envejecida** | Menor consumo per cápita asociado a hogares unipersonales de personas mayores. |
+| **2** | **Zona Joven/Estudiantil** | Mayor porcentaje de población entre 15-29 años con consumo medio-bajo. |
 
 **Visualización Clave:** [Perfiles de Consumo (Radar Chart)](visualizaciones/fase6_radar_chart.png)
 
