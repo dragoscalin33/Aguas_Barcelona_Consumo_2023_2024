@@ -6,7 +6,7 @@
 | **Fecha de Emisión** | 25 de Noviembre de 2024 |
 | **Fuente de Datos** | Registros de Consumo (2023) y Alertas de Fugas (2024) |
 | **Volumen Analizado** | 963,419 registros de consumo y 121,834 alertas de fugas |
-| **Enfoque Técnico** | Análisis Descriptivo + Machine Learning (Clustering) |
+| **Enfoque Técnico** | Análisis Descriptivo + ML (Clustering) + AI (Anomaly Detection) |
 
 **[Ver análisis detallado en Jupyter Notebook](notebooks/aguas_barcelona.ipynb)**
 
@@ -20,6 +20,7 @@ El consumo de agua está altamente concentrado:
 * El **52.9%** del consumo total proviene del sector **Industrial/Intensivo**. Un contador de este tipo consume **277 veces más** que uno doméstico.
 * Geográficamente, los **tres distritos principales** (Sants-Montjuïc, Eixample y Ciutat Vella) concentran el **50.3%** del consumo.
 * **Inteligencia de Datos:** Mediante algoritmos de Clustering, hemos identificado que la **Renta** es un predictor de consumo mucho más fuerte que la **Edad** (cuya correlación es casi nula, R=0.02).
+* **Detección de Fraude (AI):** Un algoritmo de *Isolation Forest* ha detectado un **1% de anomalías críticas** (comportamientos matemáticamente inusuales sugestivos de fugas ocultas o fraude).
 * La gestión de pérdidas muestra un punto crítico: el **24% de las fugas detectadas son reiteradas** (no reparadas con la suficiente rapidez).
 
 ---
@@ -94,6 +95,16 @@ Se analizaron **121,834 alertas de fugas** registradas en 2024.
 
 ---
 
+### 2.7. Detección de Anomalías con IA (Nuevo)
+
+Implementación de **Isolation Forest** para detectar casos atípicos que escapan a las reglas simples:
+* **Hallazgo:** Se ha aislado el **1%** de los contadores con comportamiento anómalo (consumo desproporcionado para su categoría).
+* **Acción:** Estos casos son "Flags" automáticos para inspección prioritaria de fraude.
+
+**Visualización Clave:** [Detección Anomalías AI](visualizaciones/fase7_anomalias_ai.png)
+
+---
+
 ## 3. Recomendaciones Priorizadas
 
 Las siguientes acciones están ordenadas por potencial de ahorro a corto y medio plazo.
@@ -101,8 +112,9 @@ Las siguientes acciones están ordenadas por potencial de ahorro a corto y medio
 | Prioridad | Foco | Acción Recomendada | Ahorro Potencial / Objetivo | Plazo |
 | :---: | :--- | :--- | :---: | :---: |
 | **1** | **Les Corts (Intensidad)** | **Auditoría Industrial:** Inspección de los 73,253 contadores industriales en Les Corts. | **119 M L/día** | 0-6 meses |
-| **2** | **Segmentación (ML)** | **Estrategia por Perfiles:** Campañas diferenciadas (Cluster 3: Riego/Piscinas vs Cluster 0: Hogar). | Eficiencia Conductual | 3-9 meses |
-| **3** | **Fugas Operacionales** | **Protocolo de Urgencia:** Reparación en <24h para fugas >100 L/día. | Reducir reiteración al <10% | Continuo |
+| **2** | **Fraude / Anomalías** | **Inspección IA:** Revisión in-situ del 1% de casos detectados por el algoritmo Isolation Forest. | Recuperación de Ingresos |
+| **3** | **Segmentación (ML)** | **Estrategia por Perfiles:** Campañas diferenciadas (Cluster 3: Riego/Piscinas vs Cluster 0: Hogar). | Eficiencia Conductual | 3-9 meses |
+| **4** | **Fugas Operacionales** | **Protocolo de Urgencia:** Reparación en <24h para fugas >100 L/día. | Reducir reiteración al <10% | Continuo |
 | **4** | **Sants-Montjuïc** | **Auditoría General:** Inspección masiva por volumen total. | **305 M L/día** | 6-12 meses |
 
 ---
@@ -121,7 +133,7 @@ Las siguientes acciones están ordenadas por potencial de ahorro a corto y medio
 
 ### 4.3. Herramientas y Stack Tecnológico
 * **Procesamiento:** Python, Pandas, NumPy.
-* **Machine Learning:** Scikit-learn (K-Means, Normalización, Matriz de Correlación).
+* * **Machine Learning & AI:** Scikit-learn (**K-Means** para clustering, **Isolation Forest** para anomalías).
 * **Visualización:** Matplotlib, Seaborn, Folium/GeoPandas.
 
 ---
