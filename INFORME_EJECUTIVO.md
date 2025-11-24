@@ -158,5 +158,5 @@ Para consultas sobre este informe o acceso a los datos completos:
 
 ---
 
-* **Este informe fue generado como parte del análisis del consumo de agua en Barcelona. 
-* **Todos los datos utilizados provienen de fuentes oficiales y están disponibles en el repositorio del proyecto.
+* Este informe fue generado como parte del análisis del consumo de agua en Barcelona. 
+* Todos los datos utilizados provienen de fuentes oficiales y están disponibles en el repositorio del proyecto.
