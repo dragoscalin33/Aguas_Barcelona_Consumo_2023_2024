@@ -144,13 +144,21 @@ Explora los mapas interactivos:
 
 ## Visualizaciones Adicionales
 
-### Correlaciones Clave
+### A. Validación Estadística (Machine Learning)
+
+![Matriz de Correlación](visualizaciones/fase6_mapa_correlacion.png)
+
+**Hallazgo Crítico (Respuesta a la Hipótesis):**
+* **Edad vs Consumo:** El mapa de calor muestra un coeficiente casi nulo (**0.02**), demostrando que una población más envejecida no implica necesariamente un menor o mayor consumo.
+* **Renta vs Consumo:** Se observa una correlación positiva más fuerte (**0.45**), validando la hipótesis de que el nivel económico es el verdadero "driver" del consumo.
+
+### B. Correlaciones Operativas
 
 ![Mapa de Calor](visualizaciones/fase1e_mapa_calor_correlaciones.png)
 
-**Hallazgo:** Correlación **r=0.98** entre intensidad de contador y consumo per cápita.
+**Hallazgo:** Correlación extrema (**r=0.98**) entre intensidad de contador y consumo per cápita, confirmando que los grandes consumidores distorsionan la media distrital.
 
-### Composición por Distrito
+### C. Composición por Distrito
 
 ![Heatmap Composición](visualizaciones/fase2_1_heatmap_composicion.png)
 
