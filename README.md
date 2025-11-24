@@ -91,6 +91,17 @@ Explora los mapas interactivos:
 
 ---
 
+### 7. Inteligencia Artificial para Detección de Fraude
+
+Hemos implementado un algoritmo de **Isolation Forest** (Fase 7) para detectar anomalías que escapan a las reglas simples:
+
+![Detección de Anomalías](visualizaciones/fase7_anomalias_ai.png)
+
+* **Puntos Rojos (Anomalías):** Representan el **1%** de los casos más críticos.
+* **Caso de Uso:** Los puntos superiores indican zonas con consumo desproporcionado respecto a su número de contadores (alerta de fuga masiva o uso industrial no declarado).
+
+---
+
 ## Recomendaciones Priorizadas
 
 ### PRIORIDAD 1: Auditoría en Les Corts (0-6 meses)
