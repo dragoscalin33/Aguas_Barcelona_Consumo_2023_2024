@@ -170,5 +170,5 @@ Explora los mapas interactivos:
 
 ## Licencia
 
-**Este proyecto está bajo licencia MIT. 
-**Ver [LICENSE](LICENSE) para más detalles.
+* Este proyecto está bajo licencia MIT. 
+ Ver [LICENSE](LICENSE) para más detalles.
