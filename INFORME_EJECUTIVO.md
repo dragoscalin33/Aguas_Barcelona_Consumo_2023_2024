@@ -46,6 +46,7 @@ Utilizando algoritmos no supervisados (**K-Means**), hemos segmentado la poblaci
 * **Cluster 3 (Zona Rica - Alto Consumo):** Secciones censales con Renta media alta (~64k€) y el mayor consumo per cápita (**212 L/hab/día**). *Factor clave: Piscinas y riego.*
 * **Cluster 0 (Clase Media):** Consumo moderado y demografía equilibrada.
 * **Cluster 1 (Zona Envejecida):** Menor consumo per cápita asociado a hogares unipersonales.
+* **Cluster 2 (Zona Joven/Estudiantil):** Mayor porcentaje de población entre 15-29 años con consumo medio-bajo.
 * **Mito de la Edad:** El análisis estadístico confirma que la edad **no correlaciona** con el consumo (R=0.02); el factor determinante es el nivel socioeconómico.
 
 **Visualización Clave:** [Perfiles de Consumo (Radar Chart)](visualizaciones/fase6_radar_chart.png)
@@ -109,13 +110,26 @@ Implementación de **Isolation Forest** para detectar casos atípicos que escapa
 
 Las siguientes acciones están ordenadas por potencial de ahorro a corto y medio plazo.
 
-| Prioridad | Foco | Acción Recomendada | Ahorro Potencial / Objetivo | Plazo |
-| :---: | :--- | :--- | :---: | :---: |
-| **1** | **Les Corts (Intensidad)** | **Auditoría Industrial:** Inspección de los 73,253 contadores industriales en Les Corts. | **119 M L/día** | 0-6 meses |
-| **2** | **Fraude / Anomalías** | **Inspección IA:** Revisión in-situ del 1% de casos detectados por el algoritmo Isolation Forest. | Recuperación de Ingresos |
-| **3** | **Segmentación (ML)** | **Estrategia por Perfiles:** Campañas diferenciadas (Cluster 3: Riego/Piscinas vs Cluster 0: Hogar). | Eficiencia Conductual | 3-9 meses |
-| **4** | **Fugas Operacionales** | **Protocolo de Urgencia:** Reparación en <24h para fugas >100 L/día. | Reducir reiteración al <10% | Continuo |
-| **5** | **Sants-Montjuïc** | **Auditoría General:** Inspección masiva por volumen total. | **305 M L/día** | 6-12 meses |
+### PRIORIDAD 1: Auditoría en Les Corts (0-6 meses)
+- **Acción**: Inspección de 73,253 contadores industriales
+- **Ahorro Potencial**: 119M L/día
+
+### PRIORIDAD 2: Inspección de Fraude (IA)
+- **Acción**: Revisión in-situ del 1% de anomalías detectadas por Isolation Forest.
+- **Objetivo**: Recuperación de ingresos y detección de tomas ilegales.
+
+### PRIORIDAD 3: Estrategia Segmentada por Perfiles
+- **Acción**: Campañas de concienciación diferenciadas según el Cluster detectado.
+    - *Cluster 3 (Alto Standing):* Foco en eficiencia de piscinas y riego inteligente.
+    - *Cluster 0 (Familias):* Foco en electrodomésticos eficientes.
+
+### PRIORIDAD 4: Protocolo Fugas Reiteradas
+- **Acción**: Reparación <24h para fugas >100 L/día
+- **Objetivo**: Reducir reiteración de 24% a <10%
+
+### PRIORIDAD 5: Auditoría en Sants-Montjuïc (6-12 meses)
+- **Acción**: Inspección de 211,859 contadores
+- **Ahorro Potencial**: 305M L/día
 
 ---
 
@@ -133,7 +147,9 @@ Las siguientes acciones están ordenadas por potencial de ahorro a corto y medio
 
 ### 4.3. Herramientas y Stack Tecnológico
 * **Procesamiento:** Python, Pandas, NumPy.
-* **Machine Learning & AI:** Scikit-learn (**K-Means** para clustering, **Isolation Forest** para anomalías).
+* **Machine Learning & AI:**
+    * **Clustering:** Scikit-learn (K-Means), validado mediante **Método del Codo** y **Silhouette Score**.
+    * **Anomaly Detection:** Isolation Forest.
 * **Visualización:** Matplotlib, Seaborn, Folium/GeoPandas.
 
 ---
