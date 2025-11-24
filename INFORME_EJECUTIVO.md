@@ -76,7 +76,7 @@ El análisis de riesgo combina el Riesgo de Concentración Industrial (RCI) con 
 
 ### 2.5. Mapas Interactivos de Consumo
 
-Exploración la distribución espacial del consumo de agua en Barcelona mediante mapas interactivos:
+Exploración de la distribución espacial del consumo de agua en Barcelona mediante mapas interactivos:
 
 | Mapa | Descripción | Enlace |
 |------|-------------|--------|
