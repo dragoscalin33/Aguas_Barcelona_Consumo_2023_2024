@@ -10,7 +10,7 @@ Análisis exhaustivo de 963,419 registros de consumo de agua y 121,834 alertas d
 - **Top 3 distritos** concentran el **50.3%** del consumo total
 - **Sants-Montjuïc** representa el **25.6%** del consumo industrial
 - **24%** de fugas son reiteradas (no reparadas a tiempo)
-- **Machine Learning**: Identificación de **4 perfiles de consumo** mediante Clustering (K-Means).
+- **Machine Learning & AI**: Identificación de **4 perfiles de consumo** (K-Means) y detección automática de **anomalías/fraude** (Isolation Forest).
 
 ---
 
@@ -108,16 +108,20 @@ Hemos implementado un algoritmo de **Isolation Forest** (Fase 7) para detectar a
 - **Acción**: Inspección de 73,253 contadores industriales
 - **Ahorro Potencial**: 119M L/día
 
-### PRIORIDAD 2: Estrategia Segmentada por Perfiles
+### PRIORIDAD 2: Inspección de Fraude (IA)
+- **Acción**: Revisión in-situ del 1% de anomalías detectadas por Isolation Forest.
+- **Objetivo**: Recuperación de ingresos y detección de tomas ilegales.
+
+### PRIORIDAD 3: Estrategia Segmentada por Perfiles
 - **Acción**: Campañas de concienciación diferenciadas según el Cluster detectado.
     - *Cluster 3 (Alto Standing):* Foco en eficiencia de piscinas y riego inteligente.
     - *Cluster 0 (Familias):* Foco en electrodomésticos eficientes y ahorro doméstico.
 
-### PRIORIDAD 3: Protocolo Fugas Reiteradas
+### PRIORIDAD 4: Protocolo Fugas Reiteradas
 - **Acción**: Reparación <24h para fugas >100 L/día
 - **Objetivo**: Reducir reiteración de 24% a <10%
 
-### PRIORIDAD 4: Auditoría en Sants-Montjuïc (6-12 meses)
+### PRIORIDAD 5: Auditoría en Sants-Montjuïc (6-12 meses)
 - **Acción**: Inspección de 211,859 contadores
 - **Ahorro Potencial**: 305M L/día
 
@@ -128,7 +132,7 @@ Hemos implementado un algoritmo de **Isolation Forest** (Fase 7) para detectar a
 - **Datasets**: 963,419 registros consumo (2023) + 121,834 alertas fugas (2024)
 - **Stack Tecnológico**: 
   - **Procesamiento:** Python, Pandas, NumPy.
-  - **Machine Learning:** Scikit-learn (K-Means, PCA, Correlación de Pearson).
+  - **Machine Learning & AI:** Scikit-learn (K-Means, Isolation Forest, Correlación de Pearson).
   - **Visualización:** Matplotlib, Seaborn, Folium.
 - **Nota Técnica:** Se utilizó generación de datos demográficos sintéticos basados en estadística oficial de BCN para la validación del modelo de clustering (ante restricciones de privacidad en micro-datos censales).
 - **Métricas**:
