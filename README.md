@@ -43,18 +43,28 @@ Análisis exhaustivo de 963,419 registros de consumo de agua y 121,834 alertas d
 
 ### 3. Segmentación Avanzada (Data Science)
 
-Utilizando algoritmos de Machine Learning (**K-Means**) y análisis de correlación, hemos profundizado en el comportamiento poblacional:
+Utilizando algoritmos de Machine Learning (**K-Means**) y análisis de correlación, hemos profundizado en el comportamiento poblacional.
 
+**A. Validación Matemática (Por qué 4 perfiles):**
+Antes de segmentar, validamos el número óptimo de clusters mediante el **Método del Codo** y el **Silhouette Score**, confirmando que K=4 es la división más eficiente.
+
+![Validación Matemática](visualizaciones/fase6_validacion_k.png)
+
+**B. Perfiles Identificados:**
 ![Perfiles de Consumo](visualizaciones/fase6_radar_chart.png)
 
-**A. Perfiles Identificados (Clustering):**
 - **Cluster 3 (Zona Rica - Alto Consumo):** Renta media más alta (64k€) y mayor consumo per cápita (212 L/hab).
 - **Cluster 0 (Clase Media):** Consumo moderado y demografía equilibrada.
 - **Cluster 1 (Zona Envejecida):** Menor consumo per cápita asociado a hogares más pequeños.
 
-**B. Mito de la Edad (Correlación):**
+**C. Visualización 3D Interactiva:**
+Mapeo tridimensional de los barrios según Renta (X), Consumo (Y) y Edad (Z).
+
+![Clustering 3D](visualizaciones/fase6_clusters_3d.png)
+
+**D. Mito de la Edad (Correlación):**
 - **Hallazgo:** El análisis arroja un **R = 0.02** entre Edad Media y Consumo.
-- **Conclusión:** La edad por sí sola **NO** determina el consumo; el factor determinante es la Renta y el Tipo de Vivienda (piscinas/jardines).
+- **Conclusión:** La edad por sí sola **NO** determina el consumo; el factor determinante es la Renta.
 
 ---
 
