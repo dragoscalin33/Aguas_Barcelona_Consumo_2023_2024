@@ -201,6 +201,18 @@ Hemos implementado un algoritmo de **Isolation Forest** (Fase 7) para detectar a
 
 ---
 
+## Validación Profesional y Próximos Pasos
+
+Este proyecto ha sido revisado por expertos del sector hídrico, validando la utilidad del algoritmo **Isolation Forest** para la detección de fraude real mediante la identificación de roturas de estacionalidad.
+
+**Hoja de Ruta (Next Steps):**
+Basado en el feedback industrial recibido, las próximas iteraciones del modelo integrarán:
+1.  **Variables Hidráulicas:** Incorporación de datos de presión y velocidad de caudal para correlacionar con roturas.
+2.  **Infraestructura Física:** Modelado predictivo cruzando la antigüedad y material de la red de tuberías.
+3.  **Segmentación Operativa:** Análisis granular por zonas de presión hidráulica (más allá del código postal).
+
+---
+
 ## Licencia
 
 * Este proyecto está bajo licencia MIT. 
