@@ -213,6 +213,13 @@ Basado en el feedback industrial recibido, las próximas iteraciones del modelo 
 
 ---
 
+## Fuentes de Datos
+Agradecimiento a las instituciones que facilitan el acceso a datos públicos para la investigación:
+- [Open Data BCN](https://opendata-ajuntament.barcelona.cat/)
+- [Idescat](https://www.idescat.cat/)
+
+---
+
 ## Licencia
 
 * Este proyecto está bajo licencia MIT. 
