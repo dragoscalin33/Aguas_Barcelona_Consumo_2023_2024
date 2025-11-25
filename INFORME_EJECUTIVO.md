@@ -175,7 +175,7 @@ La implementación de las auditorías en Les Corts y la estrategia segmentada po
 * [Mapa de Calor de Correlaciones](visualizaciones/fase1e_mapa_calor_correlaciones.png)
 * [Heatmap de Composición por Distrito](visualizaciones/fase2_1_heatmap_composicion.png)
 * [Matriz de Correlación Demográfica](visualizaciones/fase6_mapa_correlacion.png)
-* [Explorador de Clusters 3D Interactivo](visualizaciones/fase6_clusters_3d_interactivo.html)
+* [Explorador de Clusters 3D Interactivo](visualizaciones/fase6_clusters_3d_interactivo.html) ** (Requiere descargar)
 
 ### B. Documentación Técnica
 * **Notebook Completo:** [Análisis en Jupyter](notebooks/aguas_barcelona.ipynb)
