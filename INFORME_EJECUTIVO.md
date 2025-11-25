@@ -139,9 +139,12 @@ Las siguientes acciones están ordenadas por potencial de ahorro a corto y medio
 ## 4. Metodología y Herramientas
 
 ### 4.1. Datasets
-* **Consumo (2023):** 963,419 registros que incluyen tipo de uso, distrito, y volumen consumido.
-* **Fugas (2024):** 121,834 alertas con información de localización, fecha, y estado de reparación.
-* **Datos Demográficos:** Datos sintéticos generados basados en estadística oficial de BCN para la validación del modelo de clustering (ante restricciones de privacidad).
+* **Consumo (2023):** 963,419 registros que incluyen tipo de uso, distrito y volumen consumido.
+* **Fugas (2024):** 121,834 alertas con información de localización, fecha y estado de reparación.
+* **Datos Demográficos y Socioeconómicos:** Dataset construido a partir de la agregación de fuentes oficiales:
+    * *Población y Edad:* **Ajuntament de Barcelona (Open Data)** - Padrón Municipal a 1 de enero de 2024.
+    * *Territorio:* **Idescat** - Superficie y densidad oficial por distrito.
+    * *Nivel Socioeconómico:* Indicadores de Renta Familiar Disponible (RFD) cruzados con datos censales públicos.
 
 ### 4.2. Métricas Clave
 * **RCI (Riesgo de Concentración Industrial):** Porcentaje del consumo industrial sobre el total del distrito.
