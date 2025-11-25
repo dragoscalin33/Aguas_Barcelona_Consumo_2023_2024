@@ -61,11 +61,8 @@ Antes de segmentar, validamos el número óptimo de clusters mediante el **Méto
 **C. Visualización 3D Interactiva:**
 Mapeo tridimensional de los barrios según Renta (X), Consumo (Y) y Edad (Z).
 
-![Clustering 3D](visualizaciones/fase6_clusters_3d.png)
-
-**D. Mito de la Edad (Correlación):**
-- **Hallazgo:** El análisis arroja un **R = 0.02** entre Edad Media y Consumo.
-- **Conclusión:** La edad por sí sola **NO** determina el consumo; el factor determinante es la Renta.
+[![Clustering 3D](visualizaciones/fase6_clusters_3d.png)](https://dragoscalin33.github.io/Aguas_Barcelona_Consumo_2023_2024/visualizaciones/fase6_clusters_3d_interactivo.html)
+*(Haz clic en la imagen para abrir la versión interactiva)*
 
 ---
 
@@ -89,6 +86,7 @@ Explora los mapas interactivos:
 | **Consumo Total** | ![](visualizaciones/mapa_consumo_total_screenshot.png) | [Ver mapa interactivo](https://dragoscalin33.github.io/Aguas_Barcelona_Consumo_2023_2024/mapas/mapa_consumo_total.html) |
 | **% Industrial** | ![](visualizaciones/mapa_industrial_screenshot.png) | [Ver mapa interactivo](https://dragoscalin33.github.io/Aguas_Barcelona_Consumo_2023_2024/mapas/mapa_industrial.html) |
 | **Per Cápita** | ![](visualizaciones/mapa_per_capita_screenshot.png) | [Ver mapa interactivo](https://dragoscalin33.github.io/Aguas_Barcelona_Consumo_2023_2024/mapas/mapa_per_capita.html) |
+| **Clusters 3D** | ![](visualizaciones/fase6_clusters_3d.png) | [Explorar Cubo 3D](https://dragoscalin33.github.io/Aguas_Barcelona_Consumo_2023_2024/visualizaciones/fase6_clusters_3d_interactivo.html) |
 
 ---
 
