@@ -167,6 +167,8 @@ El análisis revela tres áreas críticas de intervención:
 
 La implementación de las auditorías en Les Corts y la estrategia segmentada por clusters tienen el potencial de reducir el consumo significativamente y mejorar la resiliencia del sistema hídrico.
 
+"Nota: La metodología de detección de anomalías presentada ha sido contrastada favorablemente con expertos del sector, identificándose como futuras líneas de mejora la incorporación de variables hidráulicas (presión de red) y físicas (material de tuberías) para aumentar la precisión predictiva."
+
 ---
 
 ## Anexos y Recursos Adicionales
