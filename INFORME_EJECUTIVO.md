@@ -43,7 +43,7 @@ Los distritos de **Sants-Montjuïc, Eixample y Ciutat Vella** son los principale
 
 Utilizando algoritmos no supervisados (**K-Means**), hemos segmentado la población en 4 perfiles de comportamiento para personalizar las estrategias de ahorro.
 
-**Mito de la Edad:** El análisis estadístico confirma que la edad **no correlaciona** con el consumo (R=0.02); el factor determinante es el nivel socioeconómico.
+**Mito de la Edad:** "Se descarta el género como factor determinante. La aparente correlación entre edad avanzada y consumo se explica por la estructura demográfica de los barrios de renta alta (Sarrià-Sant Gervasi), donde coincide una población envejecida con un alto consumo residencial (efecto renta, no efecto edad)."
 
 | Cluster | Perfil | Características Clave |
 | :---: | :--- | :--- |
