@@ -85,7 +85,7 @@ Exploración de la distribución espacial del consumo de agua en Barcelona media
 
 | Visualización | Descripción | Enlace |
 | :--- | :--- | :--- |
-| **Mapa Maestro (GIS)** | Visor interactivo que permite cruzar variables clave:<br>1. **Consumo Total** (Volumen)<br>2. **% Industrial** (Actividad Económica)<br>3. **Per Cápita** (Eficiencia) | [ **Abrir Mapa Interactivo**](https://dragoscalin33.github.io/Aguas_Barcelona_Consumo_2023_2024/visualizaciones/mapa_maestro_barcelona.html) |
+| **Mapa Maestro (GIS)** | Visor interactivo que permite cruzar variables clave:<br>1. **Consumo Total** (Volumen)<br>2. **% Industrial** (Actividad Económica)<br>3. **Per Cápita** (Eficiencia) | [ **Abrir Mapa Interactivo**](https://dragoscalin33.github.io/Aguas_Barcelona_Consumo_2023_2024/mapas/mapa_maestro_barcelona.html) |
 
 ### 2.6. Análisis de Fugas y Pérdidas
 
