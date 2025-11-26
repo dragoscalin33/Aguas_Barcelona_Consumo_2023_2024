@@ -39,6 +39,8 @@ Los distritos de **Sants-Montjuïc, Eixample y Ciutat Vella** son los principale
 
 **Visualización Clave:** [Consumo por Distrito](visualizaciones/fase1c_ranking_distritos.png)
 
+"Nota: Aunque Ciutat Vella ocupa la 3ª posición en volumen absoluto, presenta la intensidad por contador más alta de la ciudad, lo que indica un uso mucho más concentrado que en el Eixample."
+
 ### 2.2. Segmentación Avanzada (Data Science)
 
 Utilizando algoritmos no supervisados (**K-Means**), hemos segmentado la población en 4 perfiles de comportamiento para personalizar las estrategias de ahorro.
@@ -57,11 +59,11 @@ Utilizando algoritmos no supervisados (**K-Means**), hemos segmentado la poblaci
 
 La distribución del consumo muestra una clara dicotomía, con el sector industrial ejerciendo una presión desproporcionada sobre la red.
 
-| Tipo de Uso | % Consumo Total | Intensidad (L/día/contador) | Multiplicador vs Doméstico |
+| Tipo de Uso | % Consumo Total | Intensidad (L/día/contador) | Contadores Estimados |
 | :--- | :---: | :---: | :---: |
-| **Industrial** | **52.9%** | 9,671 | **277x** |
-| Doméstico | 33.6% | 35 | 1x |
-| Comercial | 13.5% | 135 | 3.9x |
+| **Industrial** | **52.9%** | 9,671 | **3,400** |
+| Doméstico | 33.6% | 35 | 595,000 |
+| Comercial | 13.5% | 135 | 61,000 |
 
 **Visualización Clave:** [Consumo por Uso](visualizaciones/fase1a_consumo_por_uso.png)
 
@@ -105,6 +107,8 @@ Implementación de **Isolation Forest** para detectar casos atípicos que escapa
 * **Acción:** Estos casos son "Flags" automáticos para inspección prioritaria de fraude.
 
 **Visualización Clave:** [Detección Anomalías AI](visualizaciones/fase7_anomalias_ai.png)
+
+"El análisis detallado reveló que los contadores clasificados como 'domésticos' en Ciutat Vella consumen 4 veces más (122 L/día) que en el Eixample (28 L/día), apuntando a una alta prevalencia de pisos turísticos o actividad comercial encubierta."
 
 ---
 
