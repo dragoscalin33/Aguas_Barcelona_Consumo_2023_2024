@@ -92,7 +92,7 @@ Hemos consolidado toda la información geográfica en un **Mapa Maestro Interact
 
 | Visualización | Descripción | Acceso |
 | :--- | :--- | :--- |
-| **Mapa Maestro (GIS)** | Visor unificado con 3 capas seleccionables:<br>1. **Consumo Total** (Volumen)<br>2. **% Industrial** (Actividad Económica)<br>3. **Per Cápita** (Eficiencia/Fraude) | [ **Abrir Mapa Interactivo**](https://dragoscalin33.github.io/Aguas_Barcelona_Consumo_2023_2024/visualizaciones/mapa_maestro_barcelona.html) |
+| **Mapa Maestro (GIS)** | Visor unificado con 3 capas seleccionables:<br>1. **Consumo Total** (Volumen)<br>2. **% Industrial** (Actividad Económica)<br>3. **Per Cápita** (Eficiencia/Fraude) | [ **Abrir Mapa Interactivo**](https://dragoscalin33.github.io/Aguas_Barcelona_Consumo_2023_2024/mapas/mapa_maestro_barcelona.html) |
 ---
 
 ### 6. Análisis de Fugas
