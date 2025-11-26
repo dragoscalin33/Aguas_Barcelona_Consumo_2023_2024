@@ -19,7 +19,7 @@ Este análisis proporciona una visión estratégica del comportamiento hídrico 
 El consumo de agua está altamente concentrado:
 * El **52.9%** del consumo total proviene del sector **Industrial/Intensivo**. Un contador de este tipo consume **277 veces más** que uno doméstico.
 * Geográficamente, los **tres distritos principales** (Sants-Montjuïc, Eixample y Ciutat Vella) concentran el **50.3%** del consumo.
-* **Inteligencia de Datos:** Mediante algoritmos de Clustering, hemos identificado que la **Renta** es un predictor de consumo mucho más fuerte que la **Edad** (cuya correlación es casi nula, R=0.02).
+* **Inteligencia de Datos:** Mediante algoritmos de Clustering, hemos identificado que la Densidad Poblacional es un factor clave de eficiencia (barrios más densos consumen menos per cápita), mientras que la Edad tiene una correlación nula (R=0.02).
 * **Detección de Fraude (AI):** Un algoritmo de *Isolation Forest* ha detectado un **1% de anomalías críticas** (comportamientos matemáticamente inusuales sugestivos de fugas ocultas o fraude).
 * La gestión de pérdidas muestra un punto crítico: el **24% de las fugas detectadas son reiteradas** (no reparadas con la suficiente rapidez).
 
@@ -47,10 +47,9 @@ Utilizando algoritmos no supervisados (**K-Means**), hemos segmentado la poblaci
 
 | Cluster | Perfil | Características Clave |
 | :---: | :--- | :--- |
-| **3** | **Zona Rica - Alto Consumo** | Renta más alta (~64k€) y consumo per cápita extremo (**212 L/hab/día**). Principalmente piscinas y riego. |
-| **0** | **Clase Media** | Consumo moderado y demografía equilibrada. El perfil estándar de la ciudad. |
-| **1** | **Zona Envejecida** | Menor consumo per cápita asociado a hogares unipersonales de personas mayores. |
-| **2** | **Zona Joven/Estudiantil** | Mayor porcentaje de población entre 15-29 años con consumo medio-bajo. |
+| **A** | **Turístico / Intensivo** | Distritos como Ciutat Vella. Alta intensidad comercial y consumo flotante (turismo). |
+| **B** | **Residencial / Denso** | Distritos como Eixample y Gràcia. Alta densidad (>250 hab/ha) y gran eficiencia en consumo per cápita. |
+| **C** | **Periferia** | Distritos como Sants-Montjuïc. Menor densidad y consumo moderado. |
 
 **Visualización Clave:** [Perfiles de Consumo (Radar Chart)](visualizaciones/fase6_radar_chart.png)
 
@@ -113,9 +112,9 @@ Implementación de **Isolation Forest** para detectar casos atípicos que escapa
 
 Las siguientes acciones están ordenadas por potencial de ahorro a corto y medio plazo.
 
-### PRIORIDAD 1: Auditoría en Les Corts (0-6 meses)
-- **Acción**: Inspección de 73,253 contadores industriales
-- **Ahorro Potencial**: 119M L/día
+### PRIORIDAD 1: Auditoría en Ciutat Vella (Inmediata)
+- **Acción**: Inspección técnica de la red en el Distrito 1
+- **Justificación**: Marcado como "Anomalía" por la IA debido a su intensidad desproporcionada (245 L/contador).
 
 ### PRIORIDAD 2: Inspección de Fraude (IA)
 - **Acción**: Revisión in-situ del 1% de anomalías detectadas por Isolation Forest.
@@ -123,8 +122,8 @@ Las siguientes acciones están ordenadas por potencial de ahorro a corto y medio
 
 ### PRIORIDAD 3: Estrategia Segmentada por Perfiles
 - **Acción**: Campañas de concienciación diferenciadas según el Cluster detectado.
-    - *Cluster 3 (Alto Standing):* Foco en eficiencia de piscinas y riego inteligente.
-    - *Cluster 0 (Familias):* Foco en electrodomésticos eficientes.
+    - *Cluster A (Turístico):* Control de licencias y eficiencia en hostelería.
+    - *Cluster B (Residencial):* Foco en comunidades de vecinos y ahorro doméstico.
 
 ### PRIORIDAD 4: Protocolo Fugas Reiteradas
 - **Acción**: Reparación <24h para fugas >100 L/día
@@ -141,10 +140,9 @@ Las siguientes acciones están ordenadas por potencial de ahorro a corto y medio
 ### 4.1. Datasets
 * **Consumo (2023):** 963,419 registros que incluyen tipo de uso, distrito y volumen consumido.
 * **Fugas (2024):** 121,834 alertas con información de localización, fecha y estado de reparación.
-* **Datos Demográficos y Socioeconómicos:** Dataset construido a partir de la agregación de fuentes oficiales:
+* **Datos Demográficos:** Dataset construido a partir de la agregación de fuentes oficiales:
     * *Población y Edad:* **Ajuntament de Barcelona (Open Data)** - Padrón Municipal a 1 de enero de 2024.
     * *Territorio:* **Idescat** - Superficie y densidad oficial por distrito.
-    * *Nivel Socioeconómico:* Indicadores de Renta Familiar Disponible (RFD) cruzados con datos censales públicos.
 
 ### 4.2. Métricas Clave
 * **RCI (Riesgo de Concentración Industrial):** Porcentaje del consumo industrial sobre el total del distrito.
@@ -164,11 +162,11 @@ Las siguientes acciones están ordenadas por potencial de ahorro a corto y medio
 
 El análisis revela tres áreas críticas de intervención:
 
-1.  **Concentración Industrial:** El sector industrial representa más de la mitad del consumo total, con distritos como Les Corts mostrando intensidades extremas.
-2.  **Inteligencia de Datos:** La aplicación de **Data Science** ha permitido desmentir mitos (la edad no afecta al consumo) y segmentar a la población rica (Cluster 3) como foco principal para políticas de ahorro en riego y piscinas.
+1.  **Concentración Industrial:** El sector industrial representa más de la mitad del consumo total, con distritos como Ciutat Vella mostrando intensidades extremas.
+2.  **Inteligencia de Datos:** La aplicación de Data Science ha permitido segmentar la ciudad en 3 perfiles claros, identificando al Cluster A (Zona Turística) como el foco principal de intensidad de uso, desplazando el foco tradicional puramente residencial.
 3.  **Ineficiencia Operativa:** Una cuarta parte de las fugas son reiteradas.
 
-La implementación de las auditorías en Les Corts y la estrategia segmentada por clusters tienen el potencial de reducir el consumo significativamente y mejorar la resiliencia del sistema hídrico.
+La implementación de las auditorías en Ciutat Vella y la estrategia segmentada por clusters tienen el potencial de reducir el consumo significativamente y mejorar la resiliencia del sistema hídrico.
 
 "Nota: La metodología de detección de anomalías presentada ha sido contrastada favorablemente con expertos del sector, identificándose como futuras líneas de mejora la incorporación de variables hidráulicas (presión de red) y físicas (material de tuberías) para aumentar la precisión predictiva."
 
