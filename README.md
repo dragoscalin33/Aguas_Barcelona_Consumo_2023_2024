@@ -7,10 +7,10 @@ Análisis exhaustivo de 963,419 registros de consumo de agua y 121,834 alertas d
 ## Resumen Ejecutivo
 
 - **52.9%** del consumo es industrial/intensivo
-- **Top 3 distritos** concentran el **50.3%** del consumo total
+- **Top 3 distritos** concentran el **50.2%** del consumo total
 - **Sants-Montjuïc** representa el **25.6%** del consumo industrial
 - **24%** de fugas son reiteradas (no reparadas a tiempo)
-- **Machine Learning & AI**: Identificación de **4 perfiles de consumo** (K-Means) y detección automática de **anomalías/fraude** (Isolation Forest).
+- **Machine Learning & AI**: Identificación de **3 perfiles de barrios** (K-Means) y detección automática de **anomalías/fraude** (Isolation Forest).
 
 ---
 
@@ -45,8 +45,8 @@ Análisis exhaustivo de 963,419 registros de consumo de agua y 121,834 alertas d
 
 Utilizando algoritmos de Machine Learning (**K-Means**) y análisis de correlación, hemos profundizado en el comportamiento poblacional.
 
-**A. Validación Matemática (Por qué 4 perfiles):**
-Antes de segmentar, validamos el número óptimo de clusters mediante el **Método del Codo** y el **Silhouette Score**, confirmando que K=4 es la división más eficiente.
+**A. Validación Matemática:**
+Validamos el número óptimo de clusters mediante el **Método del Codo**, confirmando que **K=3** es la división más eficiente para los 10 distritos.
 
 ![Validación Matemática](visualizaciones/fase6_validacion_k.png)
 
@@ -54,10 +54,9 @@ Antes de segmentar, validamos el número óptimo de clusters mediante el **Méto
 
 ![Perfiles de Consumo](visualizaciones/fase6_radar_chart.png)
 
-- **Cluster 3 (Zona Rica - Alto Consumo):** Renta media más alta (64k€) y mayor consumo per cápita (212 L/hab).
-- **Cluster 0 (Clase Media):** Consumo moderado y demografía equilibrada.
-- **Cluster 1 (Zona Envejecida):** Menor consumo per cápita asociado a hogares más pequeños.
-- **Cluster 2 (Zona Joven/Estudiantil):** Mayor porcentaje de población entre 15-29 años con consumo medio-bajo.
+- **Cluster A (Zona Turística/Intensiva):** Ciutat Vella y Les Corts. Máximo consumo per cápita y alta densidad comercial.
+- **Cluster B (Zona Residencial Densa):** Eixample, Gràcia, Sant Martí. Alta densidad poblacional (>250 hab/ha) pero consumo eficiente por habitante.
+- **Cluster C (Periferia Familiar):** Sants-Montjuïc, Sarrià. Menor densidad, consumo moderado.
 
 **C. Visualización 3D Interactiva:**
 Mapeo tridimensional de los barrios según Renta (X), Consumo (Y) y Edad (Z).
@@ -107,16 +106,16 @@ Hemos implementado un algoritmo de **Isolation Forest** (Fase 7) para detectar a
 
 ![Detección de Anomalías](visualizaciones/fase7_anomalias_ai.png)
 
-* **Puntos Rojos (Anomalías):** Representan el **1%** de los casos más críticos.
-* **Caso de Uso:** Los puntos superiores indican zonas con consumo desproporcionado respecto a su número de contadores (alerta de fuga masiva o uso industrial no declarado).
+* **El Hallazgo:** El modelo marcó automáticamente al **Distrito 01 (Ciutat Vella)** como una anomalía estadística.
+* **La Razón:** Su ratio de **Intensidad (245 L/contador)** se desvía significativamente de la norma, sugiriendo fugas estructurales en la red antigua o fraude en locales turísticos no declarados.
 
 ---
 
 ## Recomendaciones Priorizadas
 
-### PRIORIDAD 1: Auditoría en Les Corts (0-6 meses)
-- **Acción**: Inspección de 73,253 contadores industriales
-- **Ahorro Potencial**: 119M L/día
+### PRIORIDAD 1: Auditoría en Ciutat Vella (Inmediata)
+- **Acción**: Inspección técnica de la red en el Distrito 1.
+- **Justificación**: Marcado como "Anomalía" por la IA debido a su intensidad desproporcionada (245 L/contador).
 
 ### PRIORIDAD 2: Inspección de Fraude (IA)
 - **Acción**: Revisión in-situ del 1% de anomalías detectadas por Isolation Forest.
@@ -124,8 +123,8 @@ Hemos implementado un algoritmo de **Isolation Forest** (Fase 7) para detectar a
 
 ### PRIORIDAD 3: Estrategia Segmentada por Perfiles
 - **Acción**: Campañas de concienciación diferenciadas según el Cluster detectado.
-    - *Cluster 3 (Alto Standing):* Foco en eficiencia de piscinas y riego inteligente.
-    - *Cluster 0 (Familias):* Foco en electrodomésticos eficientes y ahorro doméstico.
+    - *Cluster A (Turístico/Intensivo): Foco en eficiencia de comercios y hoteles.
+    - *CCluster B (Residencial Denso): Foco en comunidades de vecinos y ahorro doméstico.
 
 ### PRIORIDAD 4: Protocolo Fugas Reiteradas
 - **Acción**: Reparación <24h para fugas >100 L/día
@@ -144,7 +143,6 @@ Hemos implementado un algoritmo de **Isolation Forest** (Fase 7) para detectar a
   - **Procesamiento:** Python, Pandas, NumPy.
   - **Machine Learning & AI:** Scikit-learn (K-Means, Isolation Forest, Correlación de Pearson).
   - **Visualización:** Matplotlib, Seaborn, Folium.
-- **Nota Técnica:** Se utilizó generación de datos demográficos sintéticos basados en estadística oficial de BCN para la validación del modelo de clustering (ante restricciones de privacidad en micro-datos censales).
 - **Métricas**:
   - **RCI**: Riesgo de Concentración Industrial
   - **IIC**: Intensidad de Consumo Industrial
@@ -175,7 +173,7 @@ Hemos implementado un algoritmo de **Isolation Forest** (Fase 7) para detectar a
 
 **Hallazgo Crítico (Respuesta a la Hipótesis):**
 * **Edad vs Consumo:** El mapa de calor muestra un coeficiente casi nulo (**0.02**), demostrando que una población más envejecida no implica necesariamente un menor o mayor consumo.
-* **Renta vs Consumo:** Se observa una correlación positiva más fuerte (**0.45**), validando la hipótesis de que el nivel económico es el verdadero "driver" del consumo.
+* **Densidad vs Consumo:** Se observa una correlación inversa, indicando que los barrios más compactos tienden a ser más eficientes en el uso del agua per cápita.
 
 ### B. Correlaciones Operativas
 
