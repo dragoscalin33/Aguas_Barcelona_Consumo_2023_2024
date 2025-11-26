@@ -81,13 +81,11 @@ El análisis de riesgo combina el Riesgo de Concentración Industrial (RCI) con 
 
 ### 2.5. Mapas Interactivos de Consumo
 
-Exploración de la distribución espacial del consumo de agua en Barcelona mediante mapas interactivos:
+Exploración de la distribución espacial del consumo de agua en Barcelona mediante un visor GIS unificado con capas seleccionables:
 
-| Mapa | Descripción | Enlace |
-|------|-------------|--------|
-| **Consumo Total** | Volumen total de agua consumida por distrito | [Ver mapa interactivo](https://dragoscalin33.github.io/Aguas_Barcelona_Consumo_2023_2024/mapas/mapa_consumo_total.html) |
-| **% Industrial** | Porcentaje del consumo destinado al sector industrial | [Ver mapa interactivo](https://dragoscalin33.github.io/Aguas_Barcelona_Consumo_2023_2024/mapas/mapa_industrial.html) |
-| **Per Cápita** | Consumo de agua por habitante y día | [Ver mapa interactivo](https://dragoscalin33.github.io/Aguas_Barcelona_Consumo_2023_2024/mapas/mapa_per_capita.html) |
+| Visualización | Descripción | Enlace |
+| :--- | :--- | :--- |
+| **Mapa Maestro (GIS)** | Visor interactivo que permite cruzar variables clave:<br>1. **Consumo Total** (Volumen)<br>2. **% Industrial** (Actividad Económica)<br>3. **Per Cápita** (Eficiencia) | [🌍 **Abrir Mapa Interactivo**](https://dragoscalin33.github.io/Aguas_Barcelona_Consumo_2023_2024/visualizaciones/mapa_maestro_barcelona.html) |
 
 ### 2.6. Análisis de Fugas y Pérdidas
 
