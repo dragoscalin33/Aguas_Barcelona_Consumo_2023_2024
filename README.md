@@ -7,7 +7,7 @@ Análisis exhaustivo de 963,419 registros de consumo de agua y 121,834 alertas d
 ## Resumen Ejecutivo
 
 - **52.9%** del consumo es industrial/intensivo
-- **Top 3 distritos** concentran el **50.2%** del consumo total
+- **Top 3 distritos** concentran el **50.3%** del consumo total
 - **Sants-Montjuïc** representa el **25.6%** del consumo industrial
 - **24%** de fugas son reiteradas (no reparadas a tiempo)
 - **Machine Learning & AI**: Identificación de **3 perfiles de barrios** (K-Means) y detección automática de **anomalías/fraude** (Isolation Forest).
@@ -31,14 +31,23 @@ Análisis exhaustivo de 963,419 registros de consumo de agua y 121,834 alertas d
 
 ![Consumo por Uso](visualizaciones/fase1a_consumo_por_uso.png)
 
-| Tipo | % Consumo | Intensidad |
-|------|-----------|------------|
-| Industrial | 52.9% | 9,671 L/día/contador |
-| Doméstico | 33.6% | 35 L/día/contador |
-| Comercial | 13.5% | 135 L/día/contador |
+| Tipo | % Consumo | Intensidad | Contadores Est. |
+|------|-----------|------------|-----------------|
+| Industrial | 52.9% | 9,671 L/día/contador | ~3,400 |
+| Doméstico | 33.6% | 35 L/día/contador | ~595,000 |
+| Comercial | 13.5% | 135 L/día/contador | ~61,000 |
 
 **Insight:** Un contador industrial consume **277× más** que uno doméstico.
 
+### La Anomalía de Ciutat Vella
+
+Investigamos por qué Ciutat Vella tiene una intensidad extrema (**245 L/contador**) frente al Eixample (**83 L/contador**) pese a tener volúmenes totales similares.
+
+![Comparativa Intensidad](visualizaciones/fase1_4_deep_dive_intensidad.png)
+
+**El Hallazgo:**
+* El consumo "doméstico" en **Ciutat Vella** es de **122 L/día** (4x la media del Eixample: 28 L/día).
+* **Conclusión:** Gran parte del parque residencial de Ciutat Vella son en realidad pisos turísticos o actividades encubiertas, lo que valida su clasificación como **foco de fraude/fugas**.
 ---
 
 ### 3. Segmentación Avanzada (Data Science)
@@ -123,8 +132,8 @@ Hemos implementado un algoritmo de **Isolation Forest** (Fase 7) para detectar a
 
 ### PRIORIDAD 3: Estrategia Segmentada por Perfiles
 - **Acción**: Campañas de concienciación diferenciadas según el Cluster detectado.
-    - *Cluster A (Turístico/Intensivo): Foco en eficiencia de comercios y hoteles.
-    - *CCluster B (Residencial Denso): Foco en comunidades de vecinos y ahorro doméstico.
+    - *Cluster A (Turístico/Intensivo):* Foco en eficiencia de comercios y hoteles.
+    - *Cluster B (Residencial Denso):* Foco en comunidades de vecinos y ahorro doméstico.
 
 ### PRIORIDAD 4: Protocolo Fugas Reiteradas
 - **Acción**: Reparación <24h para fugas >100 L/día
