@@ -86,17 +86,13 @@ Mapeo tridimensional de los barrios según Renta (X), Consumo (Y) y Edad (Z).
 
 ---
 
-### 5. Mapas Interactivos
+### 5. Análisis Geoespacial (GIS)
 
-Explora los mapas interactivos:
+Hemos consolidado toda la información geográfica en un **Mapa Maestro Interactivo** que permite activar y desactivar capas para comparar variables instantáneamente.
 
-| Mapa | Vista Previa | Enlace |
-|------|--------------|--------|
-| **Consumo Total** | ![](visualizaciones/mapa_consumo_total_screenshot.png) | [Ver mapa interactivo](https://dragoscalin33.github.io/Aguas_Barcelona_Consumo_2023_2024/mapas/mapa_consumo_total.html) |
-| **% Industrial** | ![](visualizaciones/mapa_industrial_screenshot.png) | [Ver mapa interactivo](https://dragoscalin33.github.io/Aguas_Barcelona_Consumo_2023_2024/mapas/mapa_industrial.html) |
-| **Per Cápita** | ![](visualizaciones/mapa_per_capita_screenshot.png) | [Ver mapa interactivo](https://dragoscalin33.github.io/Aguas_Barcelona_Consumo_2023_2024/mapas/mapa_per_capita.html) |
-| **Clusters 3D** | ![](visualizaciones/fase6_clusters_3d.png) | [Explorar Cubo 3D](https://dragoscalin33.github.io/Aguas_Barcelona_Consumo_2023_2024/visualizaciones/fase6_clusters_3d_interactivo.html) |
-
+| Visualización | Descripción | Acceso |
+| :--- | :--- | :--- |
+| **Mapa Maestro (GIS)** | Visor unificado con 3 capas seleccionables:<br>1. **Consumo Total** (Volumen)<br>2. **% Industrial** (Actividad Económica)<br>3. **Per Cápita** (Eficiencia/Fraude) | [🌍 **Abrir Mapa Interactivo**](https://dragoscalin33.github.io/Aguas_Barcelona_Consumo_2023_2024/visualizaciones/mapa_maestro_barcelona.html) |
 ---
 
 ### 6. Análisis de Fugas
