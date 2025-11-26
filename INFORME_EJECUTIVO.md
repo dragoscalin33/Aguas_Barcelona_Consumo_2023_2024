@@ -39,7 +39,7 @@ Los distritos de **Sants-Montjuïc, Eixample y Ciutat Vella** son los principale
 
 **Visualización Clave:** [Consumo por Distrito](visualizaciones/fase1c_ranking_distritos.png)
 
-"Nota: Aunque Ciutat Vella ocupa la 3ª posición en volumen absoluto, presenta la intensidad por contador más alta de la ciudad, lo que indica un uso mucho más concentrado que en el Eixample."
+"Nota: Aunque Ciutat Vella ocupa la 3ª posición en volumen absoluto, presenta la intensidad por contador más alta de la ciudad (245 L/día), lo que indica un uso mucho más concentrado que en el Eixample (83 L/día)."
 
 ### 2.2. Segmentación Avanzada (Data Science)
 
@@ -117,25 +117,22 @@ Implementación de **Isolation Forest** para detectar casos atípicos que escapa
 Las siguientes acciones están ordenadas por potencial de ahorro a corto y medio plazo.
 
 ### PRIORIDAD 1: Auditoría en Ciutat Vella (Inmediata)
-- **Acción**: Inspección técnica de la red en el Distrito 1
+- **Acción**: Inspección técnica de la red en el Distrito 1.
 - **Justificación**: Marcado como "Anomalía" por la IA debido a su intensidad desproporcionada (245 L/contador).
 
-### PRIORIDAD 2: Inspección de Fraude (IA)
+### PRIORIDAD 2: Plan de Choque Industrial
+- **Acción**: Auditoría dirigida a **1,287 grandes contadores** en Sants, Eixample y Les Corts.
+- **Impacto**: Control del **60%** del consumo industrial total con solo el 0.1% de inspecciones.
+- **Objetivo**: Recuperación estimada de **600 Millones L/día**.
+
+### PRIORIDAD 3: Inspección de Fraude (IA)
 - **Acción**: Revisión in-situ del 1% de anomalías detectadas por Isolation Forest.
-- **Objetivo**: Recuperación de ingresos y detección de tomas ilegales.
 
-### PRIORIDAD 3: Estrategia Segmentada por Perfiles
-- **Acción**: Campañas de concienciación diferenciadas según el Cluster detectado.
-    - *Cluster A (Turístico):* Control de licencias y eficiencia en hostelería.
-    - *Cluster B (Residencial):* Foco en comunidades de vecinos y ahorro doméstico.
+### PRIORIDAD 4: Estrategia Segmentada por Perfiles
+- **Acción**: Campañas diferenciadas (Turístico vs Residencial).
 
-### PRIORIDAD 4: Protocolo Fugas Reiteradas
-- **Acción**: Reparación <24h para fugas >100 L/día
-- **Objetivo**: Reducir reiteración de 24% a <10%
-
-### PRIORIDAD 5: Auditoría en Sants-Montjuïc (6-12 meses)
-- **Acción**: Inspección de 211,859 contadores
-- **Ahorro Potencial**: 305M L/día
+### PRIORIDAD 5: Protocolo Fugas Reiteradas
+- **Acción**: Reparación <24h para fugas >100 L/día.
 
 ---
 
