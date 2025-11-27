@@ -182,10 +182,17 @@ La implementación de las auditorías en Ciutat Vella y la estrategia segmentada
 ## Anexos y Recursos Adicionales
 
 ### A. Visualizaciones Complementarias
-* [Mapa de Calor de Correlaciones](visualizaciones/fase1e_mapa_calor_correlaciones.png)
-* [Heatmap de Composición por Distrito](visualizaciones/fase2_1_heatmap_composicion.png)
-* [Matriz de Correlación Demográfica](visualizaciones/fase6_mapa_correlacion.png)
-* [Explorador de Clusters 3D Interactivo](visualizaciones/fase6_clusters_3d_interactivo.html) (Requiere descargar)
+
+** A.1. Correlaciones Operativas**
+![Mapa de Calor](visualizaciones/fase1e_mapa_calor_correlaciones.png)
+* **Hallazgo:** Correlación extrema (**r=0.98**) entre intensidad técnica y consumo per cápita. También confirma la nulidad de la correlación Edad-Consumo (**r=0.02**).
+
+** A.2. Composición por Distrito**
+![Heatmap Composición](visualizaciones/fase2_1_heatmap_composicion.png)
+* **Hallazgo:** Dicotomía clara (**r=-0.96**) entre distritos industriales y domésticos.
+
+** A.3. Visualización 3D Interactiva**
+* [Explorador de Clusters 3D (Archivo HTML)](visualizaciones/fase6_clusters_3d_interactivo.html) - *Requiere descarga para visualizar la interactividad.*
 
 ### B. Documentación Técnica
 * **Notebook Completo:** [Análisis en Jupyter](notebooks/aguas_barcelona.ipynb)
