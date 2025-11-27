@@ -81,7 +81,8 @@ Mapeo tridimensional estratégico que cruza las tres variables clave de gestión
 * **Eje Y (Social/Fraude):** Consumo Per Cápita (donde destaca Ciutat Vella).
 * **Eje Z (Económico):** % Industrial (donde destaca Sants-Montjuïc).
 
-[![Clustering 3D](visualizaciones/fase6_clusters_3d.png)](https://dragoscalin33.github.io/Aguas_Barcelona_Consumo_2023_2024/visualizaciones/fase6_clusters_3d_interactivo.html)
+[![Clustering 3D](visualizaciones/fase6_clusters_3d_static.png)](https://dragoscalin33.github.io/Aguas_Barcelona_Consumo_2023_2024/visualizaciones/fase6_clusters_3d_interactivo.html)
+
 *(Haz clic en la imagen para abrir la versión interactiva)*
 ---
 
@@ -108,6 +109,7 @@ Este visor GIS permite a los técnicos activar y desactivar capas para cruzar va
 | **3. Per Cápita** | Aísla la anomalía turística de **Ciutat Vella** (zona oscura en el centro). |
 
 [![Ver Mapa Interactivo](visualizaciones/mapa_consumo_total_screenshot.png)](https://dragoscalin33.github.io/Aguas_Barcelona_Consumo_2023_2024/mapas/mapa_maestro_barcelona.html)
+
 *(Haz clic en la imagen para abrir el visor GIS con control de capas)*
 
 ---
