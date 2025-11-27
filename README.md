@@ -88,11 +88,17 @@ Mapeo tridimensional de los barrios según Renta (X), Consumo (Y) y Edad (Z).
 
 ### 5. Análisis Geoespacial (GIS)
 
-Hemos consolidado toda la información geográfica en un **Mapa Maestro Interactivo** que permite activar y desactivar capas para comparar variables instantáneamente.
+Hemos consolidado toda la información geográfica en un **Mapa Maestro Interactivo**.
+Este visor GIS permite a los técnicos activar y desactivar capas para cruzar variables clave al instante:
 
-| Visualización | Descripción | Acceso |
-| :--- | :--- | :--- |
-| **Mapa Maestro (GIS)** | Visor unificado con 3 capas seleccionables:<br>1. **Consumo Total** (Volumen)<br>2. **% Industrial** (Actividad Económica)<br>3. **Per Cápita** (Eficiencia/Fraude) | [ **Abrir Mapa Interactivo**](https://dragoscalin33.github.io/Aguas_Barcelona_Consumo_2023_2024/mapas/mapa_maestro_barcelona.html) |
+| Capa Activa | Insights Visuales |
+| :--- | :--- |
+| **1. Volumen Total** | Identifica la mancha de consumo masivo en **Sants-Montjuïc** (Industrial). |
+| **2. Intensidad** | Revela la "fábrica invisible" de servicios en el **Eixample**. |
+| **3. Per Cápita** | Aísla la anomalía turística de **Ciutat Vella** (zona oscura en el centro). |
+
+[![Ver Mapa Interactivo](visualizaciones/mapa_consumo_total_screenshot.png)](https://dragoscalin33.github.io/Aguas_Barcelona_Consumo_2023_2024/visualizaciones/mapa_maestro_barcelona.html)
+*(Haz clic en la imagen para abrir el visor GIS con control de capas)*
 
 ---
 
