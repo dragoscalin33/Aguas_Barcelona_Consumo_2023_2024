@@ -63,15 +63,15 @@ Validamos el número óptimo de clusters mediante el **Método del Codo**, confi
 
 El modelo ha segmentado la ciudad en tres arquetipos de comportamiento hídrico:
 
-* 🔴 **PERFIL INTENSIVO / TURÍSTICO (Ciutat Vella):**
+*  **PERFIL INTENSIVO / TURÍSTICO (Ciutat Vella):**
     * *Característica:* Consumo per cápita extremo (**>89 L/hab**) y baja vocación industrial.
     * *Diagnóstico:* Anomalía provocada por población flotante (turismo) y actividad comercial.
 
-* 🟠 **PERFIL INDUSTRIAL (Sants-Montjuïc, Les Corts):**
+*  **PERFIL INDUSTRIAL (Sants-Montjuïc, Les Corts):**
     * *Característica:* Alta intensidad por contador y **>60%** de consumo industrial.
     * *Diagnóstico:* Distritos productivos con grandes consumidores unitarios.
 
-* 🔵 **PERFIL RESIDENCIAL COMPACTO (Eixample, Gràcia, Sant Martí...):**
+*  **PERFIL RESIDENCIAL COMPACTO (Eixample, Gràcia, Sant Martí...):**
     * *Característica:* Alta densidad poblacional y consumo per cápita eficiente (**<40 L/hab**).
     * *Diagnóstico:* El estándar de consumo doméstico de la ciudad.
 
