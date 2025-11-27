@@ -84,6 +84,7 @@ Mapeo tridimensional estratégico que cruza las tres variables clave de gestión
 [![Clustering 3D](visualizaciones/fase6_clusters_3d_static.png)](https://dragoscalin33.github.io/Aguas_Barcelona_Consumo_2023_2024/visualizaciones/fase6_clusters_3d_interactivo.html)
 
 *(Haz clic en la imagen para abrir la versión interactiva)*
+
 ---
 
 ### 4. Análisis de Riesgo (RCI/IIC)
