@@ -142,9 +142,9 @@ Hemos implementado un algoritmo de **Isolation Forest** (Fase 7) para detectar a
     - *Cluster A (Turístico):* Control de licencias y eficiencia en hostelería.
     - *Cluster B (Residencial):* Foco en comunidades de vecinos y ahorro doméstico.
 
-### PRIORIDAD 5: Protocolo Fugas Reiteradas
-- **Acción**: Reparación <24h para fugas >100 L/día.
-- **Objetivo**: Reducir reiteración de 24% a <10%.
+### PRIORIDAD 5: Protocolo de Calidad (Fugas Reiteradas)
+- **Acción**: Implementar auditoría de calidad post-reparación y análisis de causa raíz en incidencias repetitivas.
+- **Objetivo**: Reducir la tasa de reiteración del 24% a <10%.
 
 ---
 
