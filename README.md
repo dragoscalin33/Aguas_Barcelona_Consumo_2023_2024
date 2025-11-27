@@ -97,7 +97,7 @@ Este visor GIS permite a los técnicos activar y desactivar capas para cruzar va
 | **2. Intensidad** | Revela la "fábrica invisible" de servicios en el **Eixample**. |
 | **3. Per Cápita** | Aísla la anomalía turística de **Ciutat Vella** (zona oscura en el centro). |
 
-[![Ver Mapa Interactivo](visualizaciones/mapa_consumo_total_screenshot.png)](https://dragoscalin33.github.io/Aguas_Barcelona_Consumo_2023_2024/visualizaciones/mapa_maestro_barcelona.html)
+[![Ver Mapa Interactivo](visualizaciones/mapa_consumo_total_screenshot.png)](https://dragoscalin33.github.io/Aguas_Barcelona_Consumo_2023_2024/mapas/mapa_maestro_barcelona.html)
 *(Haz clic en la imagen para abrir el visor GIS con control de capas)*
 
 ---
