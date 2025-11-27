@@ -93,15 +93,21 @@ Hemos consolidado toda la información geográfica en un **Mapa Maestro Interact
 | Visualización | Descripción | Acceso |
 | :--- | :--- | :--- |
 | **Mapa Maestro (GIS)** | Visor unificado con 3 capas seleccionables:<br>1. **Consumo Total** (Volumen)<br>2. **% Industrial** (Actividad Económica)<br>3. **Per Cápita** (Eficiencia/Fraude) | [ **Abrir Mapa Interactivo**](https://dragoscalin33.github.io/Aguas_Barcelona_Consumo_2023_2024/mapas/mapa_maestro_barcelona.html) |
+
 ---
 
-### 6. Análisis de Fugas
+### 6. Análisis de Fugas y Eficiencia Operativa
 
 ![Evolución de Fugas](visualizaciones/fase5_evolucion_fugas.png)
 
-- **121,834 alertas** en 2024
-- **75.8%** fugas nuevas, **24.2%** reiteradas
-- **Q3** concentra **83%** del consumo de fugas (5.0M L)
+Se procesaron **121,834 alertas**, revelando graves ineficiencias operativas:
+
+* **La Paradoja Estacional (Q1 vs Q3):**
+    * **Invierno (Q1):** Alto volumen de alertas (~41k) pero de impacto mínimo (goteos/ruido).
+    * **Verano (Q3):** Mismo volumen de alertas (~43k) pero **5 veces más pérdida de agua** (5.0M Litros).
+    * *Conclusión:* El estrés térmico provoca roturas estructurales masivas en verano.
+* **Desigualdad Extrema:** La fuga mediana es de **23 L/día**, pero se han detectado "fugas monstruo" de hasta **6,200 L/día**. Tratar todas las alertas con la misma prioridad es un error estratégico.
+* **Ineficiencia:** El **24.2%** de las fugas son reiteradas (no resueltas a la primera).
 
 ---
 
