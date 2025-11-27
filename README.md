@@ -136,8 +136,8 @@ Hemos implementado un algoritmo de **Isolation Forest** (Fase 7) para detectar a
 
 ![Detección de Anomalías](visualizaciones/fase7_anomalias_ai.png)
 
-* **El Hallazgo:** El modelo marcó automáticamente al **Distrito 01 (Ciutat Vella)** como una anomalía estadística.
-* **La Razón:** Su ratio de **Intensidad (245 L/contador)** se desvía significativamente de la norma, sugiriendo fugas estructurales en la red antigua o fraude en locales turísticos no declarados.
+* **El Hallazgo:** El algoritmo identificó matemáticamente a **Ciutat Vella** como una "Anomalía Estadística" dentro del conjunto de distritos.
+* **La Razón:** Su comportamiento (Intensidad de **245 L/contador**) rompe el patrón de correlación lineal del resto de la ciudad, sugiriendo una distorsión sistemática (turismo masivo o fraude generalizado) que no se explica solo por variables demográficas.
 
 ---
 
