@@ -183,15 +183,15 @@ La implementación de las auditorías en Ciutat Vella y la estrategia segmentada
 
 ### A. Visualizaciones Complementarias
 
-** A.1. Correlaciones Operativas**
+**1. Correlaciones Operativas**
 ![Mapa de Calor](visualizaciones/fase1e_mapa_calor_correlaciones.png)
 * **Hallazgo:** Correlación extrema (**r=0.98**) entre intensidad técnica y consumo per cápita. También confirma la nulidad de la correlación Edad-Consumo (**r=0.02**).
 
-** A.2. Composición por Distrito**
+**2. Composición por Distrito**
 ![Heatmap Composición](visualizaciones/fase2_1_heatmap_composicion.png)
 * **Hallazgo:** Dicotomía clara (**r=-0.96**) entre distritos industriales y domésticos.
 
-** A.3. Visualización 3D Interactiva**
+**3. Visualización 3D Interactiva**
 * [Explorador de Clusters 3D (Archivo HTML)](visualizaciones/fase6_clusters_3d_interactivo.html) - *Requiere descarga para visualizar la interactividad.*
 
 ### B. Documentación Técnica
