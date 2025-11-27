@@ -198,25 +198,19 @@ Hemos implementado un algoritmo de **Isolation Forest** (Fase 7) para detectar a
 
 ## Visualizaciones Adicionales
 
-### A. Validación Estadística (Machine Learning)
-
-![Matriz de Correlación](visualizaciones/fase6_mapa_correlacion.png)
-
-**Hallazgo Crítico (Respuesta a la Hipótesis):**
-* **Edad vs Consumo:** El mapa de calor muestra un coeficiente casi nulo (**0.02**), demostrando que una población más envejecida no implica necesariamente un menor o mayor consumo.
-* **Densidad vs Consumo:** Se observa una correlación inversa, indicando que los barrios más compactos tienden a ser más eficientes en el uso del agua per cápita.
-
-### B. Correlaciones Operativas
+### A. Correlaciones Operativas
 
 ![Mapa de Calor](visualizaciones/fase1e_mapa_calor_correlaciones.png)
 
-**Hallazgo:** Correlación extrema (**r=0.98**) entre intensidad de contador y consumo per cápita, confirmando que los grandes consumidores distorsionan la media distrital.
+**Hallazgos Clave:**
+* **Intensidad vs Eficiencia:** Correlación extrema (**r=0.98**) entre la intensidad técnica (L/contador) y el consumo per cápita, lo que confirma que los grandes consumidores son los que distorsionan la media del distrito.
+* **Mito de la Edad:** La correlación entre Edad y Consumo es prácticamente nula (**r=0.02**), descartando el envejecimiento como causa del aumento de consumo.
 
-### C. Composición por Distrito
+### B. Composición por Distrito
 
 ![Heatmap Composición](visualizaciones/fase2_1_heatmap_composicion.png)
 
-**Hallazgo:** Dicotomía clara (r=-0.96) entre distritos industriales y domésticos.
+**Hallazgo:** Dicotomía clara (**r=-0.96**) entre distritos industriales y domésticos. Los barrios no se mezclan: o son productivos (Sants/Les Corts) o son residenciales (Gràcia/Nou Barris).
 
 ---
 
