@@ -149,7 +149,7 @@ Hemos implementado un algoritmo de **Isolation Forest** (Fase 7) para detectar a
 
 ### PRIORIDAD 2: Plan de Choque Industrial
 - **Acción**: Auditoría dirigida a **1,287 grandes contadores** estratégicos en Sants-Montjuïc, Eixample y Les Corts.
-- **Impacto**: Con solo el **0.1%** de las inspecciones, se controla el **60%** del consumo industrial total.
+- **Impacto**: Con solo el **0.2%** de las inspecciones, se controla el **60%** del consumo industrial total.
 - **Objetivo**: Recuperación estimada de **600 Millones de Litros/día** (detectando un 10% de ineficiencia).
 
 ### PRIORIDAD 3: Inspección de Fraude (IA)
@@ -188,6 +188,7 @@ Hemos implementado un algoritmo de **Isolation Forest** (Fase 7) para detectar a
 📁 Analisis-Consumo-Agua-Barcelona/
 ├── 📄 README.md (este archivo)
 ├── 📄 INFORME_EJECUTIVO.md (informe completo)
+├── 📄 INFORME_FINAL.pdf (informe completo)
 ├── 📁 notebooks/ (código Jupyter)
 ├── 📁 data/ (datasets originales)
 ├── 📁 mapas/ (mapas HTML interactivos)
