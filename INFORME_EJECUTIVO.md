@@ -104,9 +104,9 @@ El análisis de 121,834 alertas revela que el sistema de gestión actual es reac
 
 ### 2.7. Detección de Anomalías con IA
 
-Implementación de **Isolation Forest** para detectar casos atípicos que escapan a las reglas simples:
-* **Hallazgo:** Se ha aislado el **1%** de los contadores con comportamiento anómalo (consumo desproporcionado para su categoría).
-* **Acción:** Estos casos son "Flags" automáticos para inspección prioritaria de fraude.
+Implementación de **Isolation Forest** para detectar patrones atípicos en el comportamiento agregado de los distritos:
+* **Hallazgo:** El modelo aisló automáticamente al **Distrito 01 (Ciutat Vella)** como un *outlier* respecto al estándar de la ciudad.
+* **Diagnóstico:** Mientras el resto de distritos mantienen una relación coherente entre número de contadores y volumen, Ciutat Vella presenta una **intensidad desproporcionada**, validando la necesidad de una auditoría específica en esta zona.
 
 **Visualización Clave:** [Detección Anomalías AI](visualizaciones/fase7_anomalias_ai.png)
 
