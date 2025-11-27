@@ -87,16 +87,20 @@ Exploración de la distribución espacial del consumo de agua en Barcelona media
 | :--- | :--- | :--- |
 | **Mapa Maestro (GIS)** | Visor interactivo que permite cruzar variables clave:<br>1. **Consumo Total** (Volumen)<br>2. **% Industrial** (Actividad Económica)<br>3. **Per Cápita** (Eficiencia) | [ **Abrir Mapa Interactivo**](https://dragoscalin33.github.io/Aguas_Barcelona_Consumo_2023_2024/mapas/mapa_maestro_barcelona.html) |
 
-### 2.6. Análisis de Fugas y Pérdidas
+### 2.6. Análisis de Fugas y Pérdidas: La Paradoja Estacional
 
-Se analizaron **121,834 alertas de fugas** registradas en 2024.
+El análisis de 121,834 alertas revela que el sistema de gestión actual es reactivo y no discrimina por impacto real.
 
-* **Fugas Reiteradas:** El **24.2%** de las alertas corresponden a fugas que ya habían sido notificadas previamente, lo que sugiere ineficiencia en el protocolo de respuesta.
-* **Impacto Estacional:** El **Tercer Trimestre (Q3 - Verano)** concentra el **83%** del volumen total de consumo de fugas (5.0M L).
+| Métrica | Q1 (Invierno) | Q3 (Verano) | Diagnóstico |
+| :--- | :---: | :---: | :--- |
+| **Nº Alertas** | 41,306 | 43,756 | Volumen de avisos similar. |
+| **Agua Perdida** | 0.9 Millones L | **5.0 Millones L** | **El daño se multiplica x5.** |
+| **Tipo de Fuga** | Micro-fugas / Ruido | Roturas Estructurales | Prioridad crítica en Agosto. |
 
-**Visualización Clave:** [Evolución de Fugas](visualizaciones/fase5_evolucion_fugas.png)
-
----
+**Hallazgos Operativos:**
+1.  **Reiteración (24%):** Una de cada cuatro reparaciones falla o se retrasa, generando duplicidad de avisos.
+2.  **Puntos Ciegos (Data Quality):** El **12%** de las alertas (14,851 casos) no registran el dato de "Litros Perdidos", impidiendo su priorización automática.
+3.  **Fugas "Monstruo":** Se han identificado roturas industriales de **>6,000 L/día** que conviven en la misma cola de trabajo que fugas domésticas de 20 L/día.
 
 ### 2.7. Detección de Anomalías con IA
 
