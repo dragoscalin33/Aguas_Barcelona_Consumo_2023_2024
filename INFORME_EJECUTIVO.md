@@ -123,18 +123,22 @@ Las siguientes acciones están ordenadas por potencial de ahorro a corto y medio
 - **Justificación**: Marcado como "Anomalía" por la IA debido a su intensidad desproporcionada (245 L/contador).
 
 ### PRIORIDAD 2: Plan de Choque Industrial
-- **Acción**: Auditoría dirigida a **1,287 grandes contadores** en Sants, Eixample y Les Corts.
-- **Impacto**: Control del **60%** del consumo industrial total con solo el 0.1% de inspecciones.
-- **Objetivo**: Recuperación estimada de **600 Millones L/día**.
+- **Acción**: Auditoría dirigida a **1,287 grandes contadores** estratégicos en Sants-Montjuïc, Eixample y Les Corts.
+- **Impacto**: Con solo el **0.1%** de las inspecciones, se controla el **60%** del consumo industrial total.
+- **Objetivo**: Recuperación estimada de **600 Millones de Litros/día** (detectando un 10% de ineficiencia).
 
 ### PRIORIDAD 3: Inspección de Fraude (IA)
 - **Acción**: Revisión in-situ del 1% de anomalías detectadas por Isolation Forest.
+- **Objetivo**: Recuperación de ingresos y detección de tomas ilegales.
 
 ### PRIORIDAD 4: Estrategia Segmentada por Perfiles
-- **Acción**: Campañas diferenciadas (Turístico vs Residencial).
+- **Acción**: Campañas de concienciación diferenciadas según el Cluster detectado.
+    - *Cluster A (Turístico):* Control de licencias y eficiencia en hostelería.
+    - *Cluster B (Residencial):* Foco en comunidades de vecinos y ahorro doméstico.
 
-### PRIORIDAD 5: Protocolo Fugas Reiteradas
-- **Acción**: Reparación <24h para fugas >100 L/día.
+### PRIORIDAD 5: Protocolo de Calidad (Fugas Reiteradas)
+- **Acción**: Implementar auditoría de calidad post-reparación y análisis de causa raíz en incidencias repetitivas.
+- **Objetivo**: Reducir la tasa de reiteración del 24% a <10%.
 
 ---
 
