@@ -59,20 +59,30 @@ Validamos el número óptimo de clusters mediante el **Método del Codo**, confi
 
 ![Validación Matemática](visualizaciones/fase6_validacion_k.png)
 
-**B. Perfiles Identificados:**
+**B. Perfiles Identificados (Clustering K=3):**
 
-![Perfiles de Consumo](visualizaciones/fase6_radar_chart.png)
+El modelo ha segmentado la ciudad en tres arquetipos de comportamiento hídrico:
 
-- **Cluster A (Zona Turística/Intensiva):** Ciutat Vella y Les Corts. Máximo consumo per cápita y alta densidad comercial.
-- **Cluster B (Zona Residencial Densa):** Eixample, Gràcia, Sant Martí. Alta densidad poblacional (>250 hab/ha) pero consumo eficiente por habitante.
-- **Cluster C (Periferia Familiar):** Sants-Montjuïc, Sarrià. Menor densidad, consumo moderado.
+* 🔴 **PERFIL INTENSIVO / TURÍSTICO (Ciutat Vella):**
+    * *Característica:* Consumo per cápita extremo (**>89 L/hab**) y baja vocación industrial.
+    * *Diagnóstico:* Anomalía provocada por población flotante (turismo) y actividad comercial.
+
+* 🟠 **PERFIL INDUSTRIAL (Sants-Montjuïc, Les Corts):**
+    * *Característica:* Alta intensidad por contador y **>60%** de consumo industrial.
+    * *Diagnóstico:* Distritos productivos con grandes consumidores unitarios.
+
+* 🔵 **PERFIL RESIDENCIAL COMPACTO (Eixample, Gràcia, Sant Martí...):**
+    * *Característica:* Alta densidad poblacional y consumo per cápita eficiente (**<40 L/hab**).
+    * *Diagnóstico:* El estándar de consumo doméstico de la ciudad.
 
 **C. Visualización 3D Interactiva:**
-Mapeo tridimensional de los barrios según Renta (X), Consumo (Y) y Edad (Z).
+Mapeo tridimensional estratégico que cruza las tres variables clave de gestión:
+* **Eje X (Urbanismo):** Densidad de Población.
+* **Eje Y (Social/Fraude):** Consumo Per Cápita (donde destaca Ciutat Vella).
+* **Eje Z (Económico):** % Industrial (donde destaca Sants-Montjuïc).
 
 [![Clustering 3D](visualizaciones/fase6_clusters_3d.png)](https://dragoscalin33.github.io/Aguas_Barcelona_Consumo_2023_2024/visualizaciones/fase6_clusters_3d_interactivo.html)
 *(Haz clic en la imagen para abrir la versión interactiva)*
-
 ---
 
 ### 4. Análisis de Riesgo (RCI/IIC)
