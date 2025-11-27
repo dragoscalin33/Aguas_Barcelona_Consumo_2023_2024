@@ -43,17 +43,17 @@ Los distritos de **Sants-Montjuïc, Eixample y Ciutat Vella** son los principale
 
 ### 2.2. Segmentación Avanzada (Data Science)
 
-Utilizando algoritmos no supervisados (**K-Means**), hemos segmentado la población en 4 perfiles de comportamiento para personalizar las estrategias de ahorro.
+Utilizando algoritmos de Machine Learning no supervisado (**K-Means**) y validación matemática (Método del Codo, K=3), hemos segmentado la ciudad en **3 perfiles estratégicos** basados en su comportamiento hídrico real (Densidad, Consumo e Industria).
 
-**Mito de la Edad:** "Se descarta el género como factor determinante. La aparente correlación entre edad avanzada y consumo se explica por la estructura demográfica de los barrios de renta alta (Sarrià-Sant Gervasi), donde coincide una población envejecida con un alto consumo residencial (efecto renta, no efecto edad)."
+**Mito de la Edad:** "El análisis descarta la edad como factor determinante (correlación espuria R=0.02). La segmentación demuestra que el consumo se explica por la estructura económica (Industria vs Turismo) y urbanística (Densidad)."
 
 | Cluster | Perfil | Características Clave |
 | :---: | :--- | :--- |
-| **A** | **Turístico / Intensivo** | Distritos como Ciutat Vella. Alta intensidad comercial y consumo flotante (turismo). |
-| **B** | **Residencial / Denso** | Distritos como Eixample y Gràcia. Alta densidad (>250 hab/ha) y gran eficiencia en consumo per cápita. |
-| **C** | **Periferia** | Distritos como Sants-Montjuïc. Menor densidad y consumo moderado. |
+| **Rojo** | **INTENSIVO / TURÍSTICO** | **Ciutat Vella**. Distrito único con consumo per cápita extremo (**>89 L/hab**) y baja industria real. Diagnóstico: Anomalía por población flotante. |
+| **Naranja** | **INDUSTRIAL** | **Sants-Montjuïc y Les Corts**. Distritos con grandes infraestructuras (Zona Franca, Camp Nou) y vocación económica (**>60% consumo industrial**). |
+| **Azul** | **RESIDENCIAL COMPACTO** | **Eixample, Gràcia y resto**. La ciudad estándar: alta densidad poblacional y gran eficiencia en consumo per cápita (**<40 L/hab**). |
 
-**Visualización Clave:** [Perfiles de Consumo (Radar Chart)](visualizaciones/fase6_radar_chart.png)
+**Visualización Clave:** [Mapa 3D de Perfiles (Estático)](visualizaciones/fase6_clusters_3d_static.png)
 
 ### 2.3. Distribución por Tipo de Uso e Intensidad
 
