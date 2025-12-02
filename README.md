@@ -152,16 +152,12 @@ Hemos implementado un algoritmo de **Isolation Forest** (Fase 7) para detectar a
 - **Impacto**: Con solo el **0.2%** de las inspecciones, se controla el **60%** del consumo industrial total.
 - **Objetivo**: Recuperación estimada de **600 Millones de Litros/día** (detectando un 10% de ineficiencia).
 
-### PRIORIDAD 3: Inspección de Fraude (IA)
-- **Acción**: Revisión in-situ del 1% de anomalías detectadas por Isolation Forest.
-- **Objetivo**: Recuperación de ingresos y detección de tomas ilegales.
-
-### PRIORIDAD 4: Estrategia Segmentada por Perfiles
+### PRIORIDAD 3: Estrategia Segmentada por Perfiles
 - **Acción**: Campañas de concienciación diferenciadas según el Cluster detectado.
     - *Cluster A (Turístico):* Control de licencias y eficiencia en hostelería.
     - *Cluster B (Residencial):* Foco en comunidades de vecinos y ahorro doméstico.
 
-### PRIORIDAD 5: Protocolo de Calidad (Fugas Reiteradas)
+### PRIORIDAD 4: Protocolo de Calidad (Fugas Reiteradas)
 - **Acción**: Implementar auditoría de calidad post-reparación y análisis de causa raíz en incidencias repetitivas.
 - **Objetivo**: Reducir la tasa de reiteración del 24% a <10%.
 
