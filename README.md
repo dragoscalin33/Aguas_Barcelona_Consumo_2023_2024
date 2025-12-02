@@ -78,7 +78,7 @@ El modelo ha segmentado la ciudad en tres arquetipos de comportamiento hídrico:
 **C. Visualización 3D Interactiva:**
 Mapeo tridimensional estratégico que cruza las tres variables clave de gestión:
 * **Eje X (Urbanismo):** Densidad de Población.
-* **Eje Y (Social/Fraude):** Consumo Per Cápita (donde destaca Ciutat Vella).
+* **Eje Y (Social):** Consumo Per Cápita (donde destaca Ciutat Vella).
 * **Eje Z (Económico):** % Industrial (donde destaca Sants-Montjuïc).
 
 [![Clustering 3D](visualizaciones/fase6_clusters_3d_static.png)](https://dragoscalin33.github.io/Aguas_Barcelona_Consumo_2023_2024/visualizaciones/fase6_clusters_3d_interactivo.html)
