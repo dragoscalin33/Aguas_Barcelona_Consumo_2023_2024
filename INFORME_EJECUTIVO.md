@@ -20,7 +20,7 @@ El consumo de agua está altamente concentrado:
 * El **52.9%** del consumo total proviene del sector **Industrial/Intensivo**. Un contador de este tipo consume **277 veces más** que uno doméstico.
 * Geográficamente, los **tres distritos principales** (Sants-Montjuïc, Eixample y Ciutat Vella) concentran el **50.3%** del consumo.
 * **Inteligencia de Datos:** Mediante algoritmos de Clustering, hemos identificado que la Densidad Poblacional es un factor clave de eficiencia (barrios más densos consumen menos per cápita), mientras que la Edad tiene una correlación nula (R=0.02).
-* **Detección de Fraude (AI):** Un algoritmo de *Isolation Forest* ha detectado un **1% de anomalías críticas** (comportamientos matemáticamente inusuales sugestivos de fugas ocultas o fraude).
+* **Detección de Fraude (AI):** Un algoritmo de *Isolation Forest* ha detectado **anomalías críticas** (comportamientos matemáticamente inusuales sugestivos de fugas ocultas o fraude).
 * La gestión de pérdidas muestra un punto crítico: el **24% de las fugas detectadas son reiteradas** (no reparadas con la suficiente rapidez).
 
 ---
